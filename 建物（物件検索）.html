@@ -1,0 +1,2858 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://test-ans.able.co.jp/ans/bukken/ -->
+<html lang="ja">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="" name="description">
+  <meta content="" name="keyword">
+  <title>建物（物件検索）</title>
+  <link rel="icon" href="https://test-ans.able.co.jp/ans/img/ans.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://test-ans.able.co.jp/ans/img/ans.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://test-ans.able.co.jp/ans/css/reset.css?5FAB7799B21F2CED679C537886F908CF">
+  <link rel="stylesheet" href="https://test-ans.able.co.jp/ans/css/common.css?5FAB7799B21F2CED679C537886F908CF">
+  <link rel="stylesheet" href="https://test-ans.able.co.jp/ans/css/jquery-ui.min.css?5FAB7799B21F2CED679C537886F908CF">
+  <link rel="stylesheet" href="https://test-ans.able.co.jp/ans/css/w2ui-1.4.2.min.css?5FAB7799B21F2CED679C537886F908CF">
+  <link rel="stylesheet" href="https://test-ans.able.co.jp/ans/css/select2.min.css?5FAB7799B21F2CED679C537886F908CF">
+  <link rel="stylesheet"
+    href="https://test-ans.able.co.jp/ans/script/Chart.js-2.9.3/Chart.min.css?5FAB7799B21F2CED679C537886F908CF">
+  <link rel="stylesheet"
+    href="https://test-ans.able.co.jp/ans/script/fullcalendar-4.4.0/packages/core/main.css?5FAB7799B21F2CED679C537886F908CF">
+  <link rel="stylesheet"
+    href="https://test-ans.able.co.jp/ans/script/fullcalendar-4.4.0/packages/daygrid/main.css?5FAB7799B21F2CED679C537886F908CF">
+  <link rel="stylesheet"
+    href="https://test-ans.able.co.jp/ans/script/fullcalendar-4.4.0/packages/timegrid/main.css?5FAB7799B21F2CED679C537886F908CF">
+  <link rel="stylesheet"
+    href="https://test-ans.able.co.jp/ans/script/fullcalendar-4.4.0/packages/list/main.css?5FAB7799B21F2CED679C537886F908CF">
+  <link rel="stylesheet"
+    href="https://test-ans.able.co.jp/ans/script/timepicki/css/timepicki.css?5FAB7799B21F2CED679C537886F908CF">
+  <link rel="stylesheet" href="https://test-ans.able.co.jp/ans/css/ans.css?5FAB7799B21F2CED679C537886F908CF">
+  <style type="text/css">
+    #header {
+      background-color: #5A8FF1;
+    }
+
+    #settingArea {
+      height: 19px;
+      text-align: right;
+      background-image: url('/ans/img/ANSLine.gif');
+    }
+
+    #footerBtnArea {
+      background-color: #5A8FF1;
+    }
+
+    #menuArea {
+      border: 1px solid #5A8FF1;
+      background-color: #DAEDFC;
+    }
+
+    #menuArea button {
+      background: #5A8FF1;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5A8FF1', endColorstr='#5A8FF1', GradientType=0);
+    }
+
+    #menuArea button:hover {
+      background: #88b0f4;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#88b0f4', endColorstr='#88b0f4', GradientType=0);
+    }
+
+    #contents {
+      border: 1px solid #5A8FF1;
+      background-color: #DAEDFC;
+    }
+
+    #contents fieldset {
+      border: 1px solid #5A8FF1;
+    }
+
+    #coverDiv,
+    #coverDivCopy {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #fff;
+      opacity: 0.7;
+      z-index: 9999;
+      background-image: url(/ans/img/loading.gif);
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  </style>
+  <style>
+    th {
+      width: 10%;
+    }
+  </style>
+  <script>var initExe;</script>
+  <script src="https://test-ans.able.co.jp/ans/script/jquery.js?5FAB7799B21F2CED679C537886F908CF"></script>
+  <script src="https://test-ans.able.co.jp/ans/script/jquery-ui.min.js?5FAB7799B21F2CED679C537886F908CF"></script>
+  <script src="https://test-ans.able.co.jp/ans/script/w2ui-1.4.2.min.js?5FAB7799B21F2CED679C537886F908CF"></script>
+  <script src="https://test-ans.able.co.jp/ans/script/select2.min.js?5FAB7799B21F2CED679C537886F908CF"></script>
+  <script src="https://test-ans.able.co.jp/ans/script/monthpicker.js?5FAB7799B21F2CED679C537886F908CF"></script>
+  <script src="https://test-ans.able.co.jp/ans/script/i18n/ja.js?5FAB7799B21F2CED679C537886F908CF"></script>
+  <script src="https://test-ans.able.co.jp/ans/script/i18n/datepicker-ja.js?5FAB7799B21F2CED679C537886F908CF"></script>
+  <script src="https://test-ans.able.co.jp/ans/script/ansCommon.js?5FAB7799B21F2CED679C537886F908CF"></script>
+  <script src="https://test-ans.able.co.jp/ans/script/formUtil.js?5FAB7799B21F2CED679C537886F908CF"></script>
+  <script src="https://test-ans.able.co.jp/ans/script/kanaTextExtension.js"></script>
+  <script src="https://test-ans.able.co.jp/ans/script/hankakuKanaExtension.js"></script>
+  <script src="https://test-ans.able.co.jp/ans/script/Chart.js-2.9.3/Chart.bundle.min.js"></script>
+  <script src="https://test-ans.able.co.jp/ans/script/fullcalendar-4.4.0/packages/core/main.js"></script>
+  <script src="https://test-ans.able.co.jp/ans/script/fullcalendar-4.4.0/packages/core/locales-all.js"></script>
+  <script src="https://test-ans.able.co.jp/ans/script/fullcalendar-4.4.0/packages/interaction/main.js"></script>
+  <script src="https://test-ans.able.co.jp/ans/script/fullcalendar-4.4.0/packages/daygrid/main.js"></script>
+  <script src="https://test-ans.able.co.jp/ans/script/fullcalendar-4.4.0/packages/timegrid/main.js"></script>
+  <script src="https://test-ans.able.co.jp/ans/script/fullcalendar-4.4.0/packages/list/main.js"></script>
+  <script src="https://test-ans.able.co.jp/ans/script/timepicki/timepicki.js"></script>
+  <script type="text/javascript">
+    $.fn.select2.defaults.set('language', 'ja');
+  </script>
+</head>
+
+<body>
+  <script type="text/javascript">showLoading();</script>
+  <div id="coverDiv" style="width: 1440px; height: 662px; display: none;"></div>
+  <div id="rootWrap">
+    <div id="root">
+      <div id="header">
+        <div id="ansLogoTitleArea">
+          <span id="headerTitle" style="width: 980px;">建物（物件検索）</span>
+          <div id="ansLogoArea">
+            <button type="button" class="submit" id="___backBtn___" value="backTop" style="visibility:hidden"><img
+                src="https://test-ans.able.co.jp/ans/img/ableLogo.jpg" alt="ロゴ" id="ansLogo"
+                style="visibility:visible"></button>
+          </div>
+        </div>
+        <div id="userInfo"> 日本情報クリエイト株式会社&nbsp;RPAテスト店舗&nbsp;RPAテスト店舗店長<br> ANSBKN010-01<br><a
+            href="https://test-ans.able.co.jp/ans/index/logout" id="logout" style="font-size:">ログアウト</a></div>
+        <br style="clear: both;">
+        <div id="settingArea"></div>
+        <div id="messageArea">
+          <button type="button" id="messageAreaBtn">
+            <p></p>
+          </button>
+          <div id="messageAreaContents"></div>
+          <script>
+            $(function () {
+              $("#messageAreaBtn").click(function () {
+                $("#messageAreaContents").toggle("blind");
+              });
+            });
+          </script>
+        </div>
+        <div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable"
+          tabindex="-1" role="dialog" aria-describedby="todofukenDialog" aria-labelledby="ui-id-1"
+          style="display: none; position: absolute;">
+          <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle"><span
+              id="ui-id-1" class="ui-dialog-title">都道府県検索</span><button type="button"
+              class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close"
+              role="button" title="Close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span
+                class="ui-button-text">Close</span></button></div>
+          <div id="todofukenDialog" class="ui-dialog-content ui-widget-content">
+            <div style="width: 400px; float: left;">
+              <table id="todofukenDialog_condition">
+                <tbody>
+                  <tr>
+                    <th>都道府県</th>
+                    <td><select id="todofukenDialog_prefSelect" style="width:147px;"></select></td>
+                  </tr>
+                  <tr>
+                    <th>検索郵便番号</th>
+                    <td><input type="text" id="todofukenDialog_postCode"
+                        class="todofukenDialog_condition imeAlphanumeric" style="width:130px;" maxlength="7"></td>
+                  </tr>
+                  <tr id="jimushoCnd">
+                    <th>事務所名(ｶﾅ)</th>
+                    <td><input type="text" id="todofukenDialog_jimushoKna" class="todofukenDialog_condition"
+                        style="width:250px;" maxlength="200"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div style="width: 440px; float: left;">
+              <table id="cityTable" style="background-color: #FFF;">
+                <thead>
+                  <tr>
+                    <th style="vertical-align:middle; border: 1px solid #000;text-align: center;">都道府県</th>
+                    <th style="vertical-align:middle; border: 1px solid #000;text-align: center;">市区町村</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+              <div style="height:96px;"></div>
+            </div>
+            <div style="clear:both;text-align:center;padding:5px 0;">
+              <button type="button" id="todofukenDialog_searchBtn" class="wid100">検索</button>  <button type="button"
+                id="todofukenDialog_clearBtn" class="wid100" onclick="todofukenDialogClear();">条件クリア</button>
+            </div>
+            <div id="todofukenDialog_grid" style="width: 900px; height: 250px;" name="todofukenDialog_grid"
+              class="w2ui-reset w2ui-grid">
+              <div style="width: 898px; height: 248px;">
+                <div id="grid_todofukenDialog_grid_header" class="w2ui-grid-header" style="display: none;"></div>
+                <div id="grid_todofukenDialog_grid_toolbar" class="w2ui-grid-toolbar w2ui-reset w2ui-toolbar"
+                  name="todofukenDialog_grid_toolbar" style="display: none;">
+                  <table cellspacing="0" cellpadding="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td id="tb_todofukenDialog_grid_toolbar_item_w2ui-column-on-off" style="" class=""
+                          valign="middle">
+                          <table cellpadding="0" cellspacing="0" title="Show/hide columns" class="w2ui-button "
+                            onclick="var el=w2ui[&#39;todofukenDialog_grid_toolbar&#39;]; if (el) el.click(&#39;w2ui-column-on-off&#39;, event);"
+                            onmouseover="$(this).addClass(&#39;over&#39;);"
+                            onmouseout="$(this).removeClass(&#39;over&#39;).removeClass(&#39;down&#39;);"
+                            onmousedown="$(this).addClass(&#39;down&#39;);"
+                            onmouseup="$(this).removeClass(&#39;down&#39;);">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <table cellpadding="1" cellspacing="0">
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <div class="w2ui-tb-image"><span class="w2ui-icon-columns"></span></div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                        <td width="100%" id="tb_todofukenDialog_grid_toolbar_right" align="right"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div id="grid_todofukenDialog_grid_body" class="w2ui-grid-body" style="inset: 0px; height: 248px;">
+                  <div id="grid_todofukenDialog_grid_records" class="w2ui-grid-records"
+                    onscroll="var obj = w2ui[&#39;todofukenDialog_grid&#39;];         obj.last.scrollTop = this.scrollTop;         obj.last.scrollLeft = this.scrollLeft;         $(&#39;#grid_todofukenDialog_grid_columns&#39;)[0].scrollLeft = this.scrollLeft;        $(&#39;#grid_todofukenDialog_grid_summary&#39;)[0].scrollLeft = this.scrollLeft;        obj.scroll(event);"
+                    style="top: 0px; overflow: auto hidden;">
+                    <table>
+                      <tbody>
+                        <tr line="0">
+                          <td class="w2ui-grid-data" col="0" style="height: 0px; width: 80px;"></td>
+                          <td class="w2ui-grid-data" col="1" style="height: 0px; width: 100px;"></td>
+                          <td class="w2ui-grid-data" col="2" style="height: 0px; width: 170px;"></td>
+                          <td class="w2ui-grid-data" col="3" style="height: 0px; width: 170px;"></td>
+                          <td class="w2ui-grid-data" col="4" style="height: 0px; width: 170px;"></td>
+                          <td class="w2ui-grid-data-last" style="height: 0px; width: 0px;"></td>
+                        </tr>
+                        <tr id="grid_todofukenDialog_grid_rec_top" line="top" style="height: 0px">
+                          <td colspan="200"></td>
+                        </tr>
+                        <tr id="grid_todofukenDialog_grid_rec_bottom" line="bottom" style="height: 0px">
+                          <td colspan="200"></td>
+                        </tr>
+                        <tr id="grid_todofukenDialog_grid_rec_more" style="display: none">
+                          <td colspan="200" class="w2ui-load-more"></td>
+                        </tr>
+                        <tr class="w2ui-odd w2ui-empty-record" style="height: 24px">
+                          <td class="w2ui-grid-data" col="0"></td>
+                          <td class="w2ui-grid-data" col="1"></td>
+                          <td class="w2ui-grid-data" col="2"></td>
+                          <td class="w2ui-grid-data" col="3"></td>
+                          <td class="w2ui-grid-data" col="4"></td>
+                          <td class="w2ui-grid-data-last"></td>
+                        </tr>
+                        <tr class="w2ui-even w2ui-empty-record" style="height: 24px">
+                          <td class="w2ui-grid-data" col="0"></td>
+                          <td class="w2ui-grid-data" col="1"></td>
+                          <td class="w2ui-grid-data" col="2"></td>
+                          <td class="w2ui-grid-data" col="3"></td>
+                          <td class="w2ui-grid-data" col="4"></td>
+                          <td class="w2ui-grid-data-last"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div id="grid_todofukenDialog_grid_columns" class="w2ui-grid-columns">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td col="0" class="w2ui-head  w2ui-reorder-cols-head "
+                            onclick="w2ui[&#39;todofukenDialog_grid&#39;].columnClick(&#39;newYubin&#39;, event);"
+                            style="width: 80px;">
+                            <div class="w2ui-resizer" name="0" style="height: 25px; margin-left: 76px;"></div>
+                            <div class="w2ui-col-header ">
+                              <div class=""></div>郵便番号
+                            </div>
+                          </td>
+                          <td col="1" class="w2ui-head  w2ui-reorder-cols-head "
+                            onclick="w2ui[&#39;todofukenDialog_grid&#39;].columnClick(&#39;kenNm&#39;, event);"
+                            style="width: 100px;">
+                            <div class="w2ui-resizer" name="1" style="height: 25px; margin-left: 96px;"></div>
+                            <div class="w2ui-col-header ">
+                              <div class=""></div>都道府県
+                            </div>
+                          </td>
+                          <td col="2" class="w2ui-head  w2ui-reorder-cols-head "
+                            onclick="w2ui[&#39;todofukenDialog_grid&#39;].columnClick(&#39;cityNm&#39;, event);"
+                            style="width: 170px;">
+                            <div class="w2ui-resizer" name="2" style="height: 25px; margin-left: 166px;"></div>
+                            <div class="w2ui-col-header ">
+                              <div class=""></div>市区町村
+                            </div>
+                          </td>
+                          <td col="3" class="w2ui-head  w2ui-reorder-cols-head "
+                            onclick="w2ui[&#39;todofukenDialog_grid&#39;].columnClick(&#39;ooazaNm&#39;, event);"
+                            style="width: 170px;">
+                            <div class="w2ui-resizer" name="3" style="height: 25px; margin-left: 166px;"></div>
+                            <div class="w2ui-col-header ">
+                              <div class=""></div>住所
+                            </div>
+                          </td>
+                          <td col="4" class="w2ui-head  w2ui-reorder-cols-head "
+                            onclick="w2ui[&#39;todofukenDialog_grid&#39;].columnClick(&#39;chomeNm&#39;, event);"
+                            style="width: 170px;">
+                            <div class="w2ui-resizer" name="4" style="height: 25px; margin-left: 166px;"></div>
+                            <div class="w2ui-col-header ">
+                              <div class=""></div>丁目・字名
+                            </div>
+                          </td>
+                          <td class="w2ui-head w2ui-head-last" style="display: table-cell; width: 0px;">
+                            <div>&nbsp;</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div id="grid_todofukenDialog_grid_summary" class="w2ui-grid-body w2ui-grid-summary"
+                  style="display: none;"></div>
+                <div id="grid_todofukenDialog_grid_footer" class="w2ui-grid-footer" style="display: none;">
+                  <div>
+                    <div class="w2ui-footer-left">Search took 0 sec</div>
+                    <div class="w2ui-footer-right"></div>
+                    <div class="w2ui-footer-center"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <table id="todofukenDialog_retTable">
+              <tbody>
+                <tr>
+                  <th>郵便番号</th>
+                  <td><input type="text" id="todofukenDialog_retPostCode" class="todofukenDialog_result zip"
+                      readonly="readonly">  エリアコード  <input type="text" id="todofukenDialog_retAreaCd"
+                      class="todofukenDialog_result" readonly="readonly"></td>
+                </tr>
+                <tr>
+                  <th>住所</th>
+                  <td><input type="text" id="todofukenDialog_retAddress1" class="todofukenDialog_result wid60p"
+                      readonly="readonly"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><input type="text" id="todofukenDialog_retAddress2" class="todofukenDialog_result widSize12"
+                      readonly="readonly">丁目  <input type="text" id="todofukenDialog_retAddress3"
+                      class="todofukenDialog_result widSize40" maxlength="20">番地</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <div>
+              <div style="float: left;">
+                <button type="button" id="todofukenDialog_closeBtn" class="wid100">閉じる</button>  <button type="button"
+                  id="todofukenDialog_torikeshihBtn" class="wid100">取消</button>
+              </div>
+              <div style="float: right;">
+                <button type="button" id="todofukenDialog_selectBtn" class="wid100">選択</button> 
+              </div>
+            </div>
+          </div>
+          <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;">
+          </div>
+          <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div>
+        </div>
+        <div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable"
+          tabindex="-1" role="dialog" aria-describedby="ensenDialog" aria-labelledby="ui-id-2"
+          style="display: none; position: absolute;">
+          <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle"><span
+              id="ui-id-2" class="ui-dialog-title">沿線検索</span><button type="button"
+              class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close"
+              role="button" title="Close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span
+                class="ui-button-text">Close</span></button></div>
+          <div id="ensenDialog" class="ui-dialog-content ui-widget-content">
+            <table id="ensenDialog_condition">
+              <tbody>
+                <tr>
+                  <th>コード</th>
+                  <td><input type="text" id="ensenDialog_ensenCd" class="ensenDialog_condition widSize6 imeAlphanumeric"
+                      maxlength="6"></td>
+                  <td rowspan="2" style="padding:0 10px;vertical-align: top;"><button type="button"
+                      id="ensenDialog_searchBtn" class="">検索</button></td>
+                </tr>
+                <tr>
+                  <th>沿線(路線)名</th>
+                  <td><input type="text" id="ensenDialog_ensenNm" class="ensenDialog_condition widSize40"
+                      maxlength="50"></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <div id="ensenDialog_grid" style="width: 540px; height: 400px;" name="ensenDialog_grid"
+              class="w2ui-reset w2ui-grid">
+              <div style="width: 538px; height: 398px;">
+                <div id="grid_ensenDialog_grid_header" class="w2ui-grid-header"
+                  style="top: 0px; left: 0px; right: 0px;">沿線一覧&nbsp;</div>
+                <div id="grid_ensenDialog_grid_toolbar" class="w2ui-grid-toolbar w2ui-reset w2ui-toolbar"
+                  name="ensenDialog_grid_toolbar" style="top: 28px; left: 0px; right: 0px;">
+                  <table cellspacing="0" cellpadding="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td id="tb_ensenDialog_grid_toolbar_item_w2ui-column-on-off" style="" class="" valign="middle">
+                          <table cellpadding="0" cellspacing="0" title="Show/hide columns" class="w2ui-button "
+                            onclick="var el=w2ui[&#39;ensenDialog_grid_toolbar&#39;]; if (el) el.click(&#39;w2ui-column-on-off&#39;, event);"
+                            onmouseover="$(this).addClass(&#39;over&#39;);"
+                            onmouseout="$(this).removeClass(&#39;over&#39;).removeClass(&#39;down&#39;);"
+                            onmousedown="$(this).addClass(&#39;down&#39;);"
+                            onmouseup="$(this).removeClass(&#39;down&#39;);">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <table cellpadding="1" cellspacing="0">
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <div class="w2ui-tb-image"><span class="w2ui-icon-columns"></span></div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                        <td width="100%" id="tb_ensenDialog_grid_toolbar_right" align="right"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div id="grid_ensenDialog_grid_body" class="w2ui-grid-body"
+                  style="inset: 66px 0px 24px; height: 308px;">
+                  <div id="grid_ensenDialog_grid_records" class="w2ui-grid-records"
+                    onscroll="var obj = w2ui[&#39;ensenDialog_grid&#39;];         obj.last.scrollTop = this.scrollTop;         obj.last.scrollLeft = this.scrollLeft;         $(&#39;#grid_ensenDialog_grid_columns&#39;)[0].scrollLeft = this.scrollLeft;        $(&#39;#grid_ensenDialog_grid_summary&#39;)[0].scrollLeft = this.scrollLeft;        obj.scroll(event);"
+                    style="top: 0px; overflow: auto hidden;">
+                    <table>
+                      <tbody>
+                        <tr line="0">
+                          <td class="w2ui-col-select" style="height: 0px;"></td>
+                          <td class="w2ui-grid-data" col="0" style="height: 0px; width: 70px;"></td>
+                          <td class="w2ui-grid-data" col="1" style="height: 0px; width: 400px;"></td>
+                          <td class="w2ui-grid-data-last" style="height: 0px; width: 0px;"></td>
+                        </tr>
+                        <tr id="grid_ensenDialog_grid_rec_top" line="top" style="height: 0px">
+                          <td colspan="200"></td>
+                        </tr>
+                        <tr id="grid_ensenDialog_grid_rec_bottom" line="bottom" style="height: 0px">
+                          <td colspan="200"></td>
+                        </tr>
+                        <tr id="grid_ensenDialog_grid_rec_more" style="display: none">
+                          <td colspan="200" class="w2ui-load-more"></td>
+                        </tr>
+                        <tr class="w2ui-odd w2ui-empty-record" style="height: 24px">
+                          <td class="w2ui-grid-data w2ui-col-select"></td>
+                          <td class="w2ui-grid-data" col="0"></td>
+                          <td class="w2ui-grid-data" col="1"></td>
+                          <td class="w2ui-grid-data-last"></td>
+                        </tr>
+                        <tr class="w2ui-even w2ui-empty-record" style="height: 24px">
+                          <td class="w2ui-grid-data w2ui-col-select"></td>
+                          <td class="w2ui-grid-data" col="0"></td>
+                          <td class="w2ui-grid-data" col="1"></td>
+                          <td class="w2ui-grid-data-last"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div id="grid_ensenDialog_grid_columns" class="w2ui-grid-columns">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td class="w2ui-head w2ui-col-select"
+                            onclick="if (event.stopPropagation) event.stopPropagation(); else event.cancelBubble = true;">
+                            <div><label>選択<br><input type="checkbox" id="grid_ensenDialog_grid_check_all" tabindex="-1"
+                                  style="display: none;"
+                                  onclick="if (this.checked) w2ui[&#39;ensenDialog_grid&#39;].selectAll();else w2ui[&#39;ensenDialog_grid&#39;].selectNone();if (event.stopPropagation) event.stopPropagation(); else event.cancelBubble = true;"></label>
+                            </div>
+                          </td>
+                          <td col="0" class="w2ui-head  w2ui-reorder-cols-head "
+                            onclick="w2ui[&#39;ensenDialog_grid&#39;].columnClick(&#39;ensenCd&#39;, event);"
+                            style="width: 70px;">
+                            <div class="w2ui-resizer" name="0" style="height: 25px; margin-left: 66px;"></div>
+                            <div class="w2ui-col-header ">
+                              <div class=""></div>コード
+                            </div>
+                          </td>
+                          <td col="1" class="w2ui-head  w2ui-reorder-cols-head "
+                            onclick="w2ui[&#39;ensenDialog_grid&#39;].columnClick(&#39;ensenNm&#39;, event);"
+                            style="width: 400px;">
+                            <div class="w2ui-resizer" name="1" style="height: 25px; margin-left: 396px;"></div>
+                            <div class="w2ui-col-header ">
+                              <div class=""></div>沿線(路線)名
+                            </div>
+                          </td>
+                          <td class="w2ui-head w2ui-head-last" style="display: table-cell; width: 0px;">
+                            <div>&nbsp;</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div id="grid_ensenDialog_grid_summary" class="w2ui-grid-body w2ui-grid-summary" style="display: none;">
+                </div>
+                <div id="grid_ensenDialog_grid_footer" class="w2ui-grid-footer"
+                  style="bottom: 0px; left: 0px; right: 0px;">
+                  <div>
+                    <div class="w2ui-footer-left">Search took 0 sec</div>
+                    <div class="w2ui-footer-right"></div>
+                    <div class="w2ui-footer-center"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div>
+              <div style="float: left;">
+                <button type="button" id="ensenDialog_closeBtn" class="wid100">キャンセル</button>
+              </div>
+              <div style="float: right;">
+                <button type="button" id="ensenDialog_selectBtn" class="wid100">確定</button>
+              </div>
+            </div>
+          </div>
+          <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;">
+          </div>
+          <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div>
+        </div>
+        <div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable"
+          tabindex="-1" role="dialog" aria-describedby="ekiDialog" aria-labelledby="ui-id-3"
+          style="display: none; position: absolute;">
+          <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle"><span
+              id="ui-id-3" class="ui-dialog-title">駅検索</span><button type="button"
+              class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close"
+              role="button" title="Close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span
+                class="ui-button-text">Close</span></button></div>
+          <div id="ekiDialog" class="ui-dialog-content ui-widget-content">
+            <table id="ekiDialog_condition">
+              <tbody>
+                <tr>
+                  <th>コード</th>
+                  <td><input type="text" id="ekiDialog_ekiCd" class="ekiDialog_condition widSize3 imeAlphanumeric"
+                      maxlength="3"></td>
+                  <td rowspan="2" style="padding:0 10px;vertical-align: top;"><button type="button"
+                      id="ekiDialog_searchBtn" class="">検索</button></td>
+                </tr>
+                <tr>
+                  <th>駅(停留所)名</th>
+                  <td><input type="text" id="ekiDialog_ekiNm" class="ekiDialog_condition widSize40" maxlength="50"></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <div id="ekiDialog_grid" style="width: 550px; height: 400px;" name="ekiDialog_grid"
+              class="w2ui-reset w2ui-grid">
+              <div style="width: 548px; height: 398px;">
+                <div id="grid_ekiDialog_grid_header" class="w2ui-grid-header" style="top: 0px; left: 0px; right: 0px;">
+                  駅一覧&nbsp;</div>
+                <div id="grid_ekiDialog_grid_toolbar" class="w2ui-grid-toolbar w2ui-reset w2ui-toolbar"
+                  name="ekiDialog_grid_toolbar" style="top: 28px; left: 0px; right: 0px;">
+                  <table cellspacing="0" cellpadding="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td id="tb_ekiDialog_grid_toolbar_item_w2ui-column-on-off" style="" class="" valign="middle">
+                          <table cellpadding="0" cellspacing="0" title="Show/hide columns" class="w2ui-button "
+                            onclick="var el=w2ui[&#39;ekiDialog_grid_toolbar&#39;]; if (el) el.click(&#39;w2ui-column-on-off&#39;, event);"
+                            onmouseover="$(this).addClass(&#39;over&#39;);"
+                            onmouseout="$(this).removeClass(&#39;over&#39;).removeClass(&#39;down&#39;);"
+                            onmousedown="$(this).addClass(&#39;down&#39;);"
+                            onmouseup="$(this).removeClass(&#39;down&#39;);">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <table cellpadding="1" cellspacing="0">
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <div class="w2ui-tb-image"><span class="w2ui-icon-columns"></span></div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                        <td width="100%" id="tb_ekiDialog_grid_toolbar_right" align="right"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div id="grid_ekiDialog_grid_body" class="w2ui-grid-body" style="inset: 66px 0px 24px; height: 308px;">
+                  <div id="grid_ekiDialog_grid_records" class="w2ui-grid-records"
+                    onscroll="var obj = w2ui[&#39;ekiDialog_grid&#39;];         obj.last.scrollTop = this.scrollTop;         obj.last.scrollLeft = this.scrollLeft;         $(&#39;#grid_ekiDialog_grid_columns&#39;)[0].scrollLeft = this.scrollLeft;        $(&#39;#grid_ekiDialog_grid_summary&#39;)[0].scrollLeft = this.scrollLeft;        obj.scroll(event);"
+                    style="top: 0px; overflow: auto hidden;">
+                    <table>
+                      <tbody>
+                        <tr line="0">
+                          <td class="w2ui-col-select" style="height: 0px;"></td>
+                          <td class="w2ui-grid-data" col="0" style="height: 0px; width: 70px;"></td>
+                          <td class="w2ui-grid-data" col="1" style="height: 0px; width: 400px;"></td>
+                          <td class="w2ui-grid-data-last" style="height: 0px; width: 0px;"></td>
+                        </tr>
+                        <tr id="grid_ekiDialog_grid_rec_top" line="top" style="height: 0px">
+                          <td colspan="200"></td>
+                        </tr>
+                        <tr id="grid_ekiDialog_grid_rec_bottom" line="bottom" style="height: 0px">
+                          <td colspan="200"></td>
+                        </tr>
+                        <tr id="grid_ekiDialog_grid_rec_more" style="display: none">
+                          <td colspan="200" class="w2ui-load-more"></td>
+                        </tr>
+                        <tr class="w2ui-odd w2ui-empty-record" style="height: 24px">
+                          <td class="w2ui-grid-data w2ui-col-select"></td>
+                          <td class="w2ui-grid-data" col="0"></td>
+                          <td class="w2ui-grid-data" col="1"></td>
+                          <td class="w2ui-grid-data-last"></td>
+                        </tr>
+                        <tr class="w2ui-even w2ui-empty-record" style="height: 24px">
+                          <td class="w2ui-grid-data w2ui-col-select"></td>
+                          <td class="w2ui-grid-data" col="0"></td>
+                          <td class="w2ui-grid-data" col="1"></td>
+                          <td class="w2ui-grid-data-last"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div id="grid_ekiDialog_grid_columns" class="w2ui-grid-columns">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td class="w2ui-head w2ui-col-select"
+                            onclick="if (event.stopPropagation) event.stopPropagation(); else event.cancelBubble = true;">
+                            <div><label>選択<br><input type="checkbox" id="grid_ekiDialog_grid_check_all" tabindex="-1"
+                                  style="display: none;"
+                                  onclick="if (this.checked) w2ui[&#39;ekiDialog_grid&#39;].selectAll();else w2ui[&#39;ekiDialog_grid&#39;].selectNone();if (event.stopPropagation) event.stopPropagation(); else event.cancelBubble = true;"></label>
+                            </div>
+                          </td>
+                          <td col="0" class="w2ui-head  w2ui-reorder-cols-head "
+                            onclick="w2ui[&#39;ekiDialog_grid&#39;].columnClick(&#39;ekiCd&#39;, event);"
+                            style="width: 70px;">
+                            <div class="w2ui-resizer" name="0" style="height: 25px; margin-left: 66px;"></div>
+                            <div class="w2ui-col-header ">
+                              <div class=""></div>コード
+                            </div>
+                          </td>
+                          <td col="1" class="w2ui-head  w2ui-reorder-cols-head "
+                            onclick="w2ui[&#39;ekiDialog_grid&#39;].columnClick(&#39;ekiNm&#39;, event);"
+                            style="width: 400px;">
+                            <div class="w2ui-resizer" name="1" style="height: 25px; margin-left: 396px;"></div>
+                            <div class="w2ui-col-header ">
+                              <div class=""></div>駅(停留所)名
+                            </div>
+                          </td>
+                          <td class="w2ui-head w2ui-head-last" style="display: table-cell; width: 0px;">
+                            <div>&nbsp;</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div id="grid_ekiDialog_grid_summary" class="w2ui-grid-body w2ui-grid-summary" style="display: none;">
+                </div>
+                <div id="grid_ekiDialog_grid_footer" class="w2ui-grid-footer"
+                  style="bottom: 0px; left: 0px; right: 0px;">
+                  <div>
+                    <div class="w2ui-footer-left">Search took 0 sec</div>
+                    <div class="w2ui-footer-right"></div>
+                    <div class="w2ui-footer-center"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div>
+              <div style="float: left;">
+                <button type="button" id="ekiDialog_closeBtn" class="wid100">キャンセル</button>
+              </div>
+              <div style="float: right;">
+                <button type="button" id="ekiDialog_selectBtn" class="wid100">確定</button>
+              </div>
+            </div>
+          </div>
+          <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;">
+          </div>
+          <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div>
+        </div>
+        <div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable"
+          tabindex="-1" role="dialog" aria-describedby="copyConfirmDialog" aria-labelledby="ui-id-4"
+          style="display: none; position: absolute;">
+          <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle"><span
+              id="ui-id-4" class="ui-dialog-title">&nbsp;</span><button type="button"
+              class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close"
+              role="button" title="Close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span
+                class="ui-button-text">Close</span></button></div>
+          <div id="copyConfirmDialog" style="" class="ui-dialog-content ui-widget-content">
+            <p>外観写真をコピーしますか？</p>
+            <br>
+            <p>※異なる建物の外観写真を流用して広告媒体に掲載する場合は、</p>
+            <p> 誇大広告となる危険性があります。</p>
+            <br>
+            <div class="searchBtnArea" style="width:auto;">
+              <button type="button" id="copyConfirmDialogCopy">する</button>  <button type="button"
+                id="copyConfirmDialogNotCopy">しない</button>  <button type="button"
+                id="copyConfirmDialogCancel">建物のコピーをやめる</button>
+            </div>
+          </div>
+          <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;">
+          </div>
+          <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div>
+        </div>
+        <div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ui-draggable ui-resizable"
+          tabindex="-1" role="dialog" aria-describedby="hizukeHenkanDialog" aria-labelledby="ui-id-5"
+          style="display: none; position: absolute;">
+          <div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix ui-draggable-handle"><span
+              id="ui-id-5" class="ui-dialog-title">和暦-西暦変換表</span><button type="button"
+              class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only ui-dialog-titlebar-close"
+              role="button" title="Close"><span class="ui-button-icon-primary ui-icon ui-icon-closethick"></span><span
+                class="ui-button-text">Close</span></button></div>
+          <div id="hizukeHenkanDialog" class="ui-dialog-content ui-widget-content">
+            <table id="hizukeHenkanDialog_table" style="table-layout: fixed;width:600px;">
+            </table>
+          </div>
+          <div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;">
+          </div>
+          <div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div>
+          <div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div>
+        </div>
+      </div>
+      <div id="mainContents">
+        <form name="bukken_indexActionForm" id="form" method="post" action="https://test-ans.able.co.jp/ans/bukken/">
+          <input type="hidden" name="idsDto.bukkenKihonId" value="" id="bukkenKihonId"><input type="hidden"
+            name="copyBukkenShashinFlg" value="" id="copyBukkenShashinFlg"><input type="hidden"
+            name="listDto.bukkenCount" value="" id="bukkenCount">
+          <div id="contents">
+            <fieldset>
+              <legend>建物（物件検索）</legend>
+              <table>
+                <script>
+                  $(function () {
+
+                    $(".condTenpo").change(function () {
+                      if (typeof chgTenpoCtrl === 'function') {
+                        // 店舗がを変更された際に処理させたい場合は、以下の関数を業務画面で作成する。
+                        chgTenpoCtrl($(this).val());
+                      }
+                    });
+
+                  });
+
+
+                  function clearCommonCond() {
+                    $(".kaishaOption, .tenpoOption").remove();
+                    $(".condKaiso, .condKaisha, .condTenpo").val("");
+                  }
+                </script>
+              </table>
+              <table>
+                <tbody>
+                  <tr>
+                    <th>物件No</th>
+                    <td>
+                      <input type="text" name="listDto.condBukkenNo" maxlength="13" value="" id="condBukkenNo"
+                        class="widSize13 imeAlphanumeric"><label style="float:right; margin-right:340px;"><input
+                          type="checkbox" name="listDto.bukkenEndFlg" value="1" checked="checked"
+                          id="bukkenEndFlg">&nbsp;物件終了を除く</label>
+                    </td>
+                    <th colspan="2"><button type="button" class="wid100" id="search" value="search">
+                        <p>検索</p>
+                        <p></p>
+                      </button></th>
+                  </tr>
+                  <tr class="condBukkenNoFromToValid">
+                    <th>物件No(From)</th>
+                    <td style="white-space:nowrap;">
+                      <input type="text" name="listDto.condBukkenNoFrom" maxlength="9" value="" id="condBukkenNoFrom"
+                        class="widSize13 imeAlphanumeric">&nbsp;～&nbsp;物件No(To)&nbsp;<input type="text"
+                        name="listDto.condBukkenNoTo" maxlength="9" value="" id="condBukkenNoTo"
+                        class="widSize13 imeAlphanumeric">
+                    </td>
+                    <th colspan="2"><button type="button" class="wid100" id="searchCount" value="search">
+                        <p>件数確認</p>
+                        <p></p>
+                      </button></th>
+                  </tr>
+                  <tr>
+                    <th>物件名</th>
+                    <td>
+                      <input type="text" name="listDto.condBukkenNm" maxlength="50" value="" id="condBukkenNm"
+                        class="wid40p">
+                    </td>
+                    <th colspan="2" class="condBukkenNoFromToValid"><button type="button" class="wid100"
+                        onclick="conditionClear();">
+                        <p>条件クリア</p>
+                        <p></p>
+                      </button></th>
+                    <th colspan="2" class="condBukkenNoFromToInvalid" style="display: none;"><button type="button"
+                        class="wid100" id="searchCount" value="search">
+                        <p>件数確認</p>
+                        <p></p>
+                      </button></th>
+                  </tr>
+                  <tr>
+                    <th>物件名ｶﾅ</th>
+                    <td>
+                      <input type="text" name="listDto.condBukkenKna" maxlength="50" value="" id="condBukkenKna"
+                        class="wid40p">
+                    </td>
+                    <th colspan="2" class="condBukkenNoFromToInvalid" style="display: none;"><button type="button"
+                        class="wid100" onclick="conditionClear();">
+                        <p>条件クリア</p>
+                        <p></p>
+                      </button></th>
+                  </tr>
+                  <tr>
+                    <th>所在地</th>
+                    <td colspan="3">
+                      <input type="text" name="listDto.condYubin" maxlength="7" value="" id="condYubin"
+                        class="widSize7 imeAlphanumeric"><button type="button" class="smallSearchBtn" id="searchJusho">
+                        <p>検索</p>
+                        <p></p>
+                      </button><input type="text" name="listDto.condJusho1" maxlength="50" value="" id="condJusho1"
+                        class="wid400"><input type="text" name="listDto.condJusho2" maxlength="6" value=""
+                        id="condJusho2" class="widSize12 imeAlphanumeric">&nbsp;丁目 <input type="text"
+                        name="listDto.condJusho3" maxlength="20" value="" id="condJusho3" class="widSize20">&nbsp;番地－号
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>最寄駅</th>
+                    <td nowrap="" colspan="3">
+                      <input type="text" name="listDto.condEnsen" maxlength="6" value="" id="condEnsen"
+                        class="widSize7 imeAlphanumeric"><button type="button" class="serchbtn" id="searchEnsen">
+                        <p>検索</p>
+                        <p></p>
+                      </button><input type="text" name="listDto.condEnsenNm" value="" readonly="readonly"
+                        id="condEnsenNm" class="wid30p">
+                    </td>
+                    <th style="padding-right: 120px;"></th>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <td nowrap="" colspan="3">
+                      <input type="text" name="listDto.condEkiFrom" maxlength="3" value="" id="condEkiFrom"
+                        class="widSize7 imeAlphanumeric"><button type="button" class="serchbtn" id="searchEkiFrom">
+                        <p>検索</p>
+                        <p></p>
+                      </button><input type="text" name="listDto.condEkiNmFrom" value="" readonly="readonly"
+                        id="condEkiNmFrom" class="wid30p"> ～ <input type="text" name="listDto.condEkiTo" maxlength="3"
+                        value="" id="condEkiTo" class="widSize7 imeAlphanumeric"><button type="button" class="serchbtn"
+                        id="searchEkiTo">
+                        <p>検索</p>
+                        <p></p>
+                      </button><input type="text" name="listDto.condEkiNmTo" value="" readonly="readonly"
+                        id="condEkiNmTo" class="wid30p">
+                    </td>
+                    <th style="padding-right: 120px;"></th>
+                  </tr>
+                  <tr>
+                    <th>管理形態</th>
+                    <td>
+                      <select name="listDto.condKanri" id="condKanri">
+                        <option value=","></option>
+                        <option value="10,MST      ">オープン</option>
+                        <option value="15,C01907781">管理形態テスト</option>
+                        <option value="20,MST      ">店専任</option>
+                        <option value="30,MST      ">家賃集金</option>
+                        <option value="40,MST      ">一括借上</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>登録・修正日</th>
+                    <td colspan="3">
+                      <label>
+                        <input type="radio" name="listDto.condRegUpdKb" value="0" checked="checked"
+                          id="radioRegDt_1">期限なし  </label>
+                      <label>
+                        <input type="radio" name="listDto.condRegUpdKb" value="1" id="radioRegDt_2">1週間以内  </label>
+                      <label>
+                        <input type="radio" name="listDto.condRegUpdKb" value="2" id="radioRegDt_3">2週間以内  </label>
+                      <label>
+                        <input type="radio" name="listDto.condRegUpdKb" value="3" id="radioRegDt_4">1ヶ月以内  </label>
+                      <label>
+                        <input type="radio" name="listDto.condRegUpdKb" value="4" id="radioRegDt_5">  </label>
+                      <label>
+                        <input type="text" name="listDto.condRegUpdDtYear" maxlength="4" value="" id="condRegUpdDtYear"
+                          class="year imeAlphanumeric" disabled=""> 年 <input type="text"
+                          name="listDto.condRegUpdDtMonth" maxlength="2" value="" id="condRegUpdDtMonth"
+                          class="month imeAlphanumeric" disabled=""> 月 <input type="text" name="listDto.condRegUpdDtDay"
+                          maxlength="2" value="" id="condRegUpdDtDay" class="day imeAlphanumeric" disabled=""> 日
+                      </label>
+                      <select name="listDto.condRegUpdDtTani" id="condRegUpdDtTani" disabled="">
+                        <option value=""></option>
+                        <option value="1">当日</option>
+                        <option value="2">以前</option>
+                        <option value="3">以降</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <td colspan="3">
+                      <label>
+                        <input type="checkbox" name="listDto.condShinchiku" value="1" id="condShinchiku">新築    </label>
+                      <label>
+                        <input type="checkbox" name="listDto.condJusho3Nashi" value="1"
+                          id="condJusho3Nashi">住所3(番地－号)が入力されていない建物  &nbsp; </label>
+                      <label>
+                        <input type="checkbox" name="listDto.condTyutoBukken" value="1"
+                          id="condTyutoBukken">中途保存された建物 &nbsp; </label>
+                      <label>
+                        <input type="checkbox" name="listDto.condTyutoHeyaAri" value="1"
+                          id="condTyutoHeyaAri">中途保存された部屋を含む建物  </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>外観写真枚数</th>
+                    <td colspan="3">
+                      <input type="text" name="listDto.condGaikanFrom" maxlength="2" value="" id="condGaikanFrom"
+                        class="widSize2 txtRight imeAlphanumeric"> 枚&nbsp;～&nbsp; <input type="text"
+                        name="listDto.condGaikanTo" maxlength="2" value="" id="condGaikanTo"
+                        class="widSize2 txtRight imeAlphanumeric"> 枚     &nbsp;&nbsp;周辺写真枚数 <input type="text"
+                        name="listDto.condShuhenFrom" maxlength="2" value="" id="condShuhenFrom"
+                        class="widSize2 txtRight imeAlphanumeric"> 枚&nbsp;～&nbsp; <input type="text"
+                        name="listDto.condShuhenTo" maxlength="2" value="" id="condShuhenTo"
+                        class="widSize2 txtRight imeAlphanumeric"> 枚     &nbsp;&nbsp;周辺写真マスタ選択枚数 <input type="text"
+                        name="listDto.condShuhenMstFrom" maxlength="2" value="" id="condShuhenMstFrom"
+                        class="widSize2 txtRight imeAlphanumeric"> 枚&nbsp;～&nbsp; <input type="text"
+                        name="listDto.condShuhenMstTo" maxlength="2" value="" id="condShuhenMstTo"
+                        class="widSize2 txtRight imeAlphanumeric"> 枚
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>部屋登録</th>
+                    <td colspan="3">
+                      <label>
+                        <input type="radio" name="listDto.condHeyaUmu" value="0" checked="checked"
+                          id="heyaRadioRyoho">両方    </label>
+                      <label>
+                        <input type="radio" name="listDto.condHeyaUmu" value="1">あり   &nbsp;&nbsp; </label>
+                      <label>
+                        <input type="radio" name="listDto.condHeyaUmu" value="2">なし  </label>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </fieldset>
+            <div id="tatemonoGrid" class="list" name="tatemonoGrid" style=""></div>
+            <br><br>
+          </div>
+          <script>
+            $("#todofukenDialog_grid").w2grid({
+              name: 'todofukenDialog_grid',
+              header: '住所一覧',
+              show: {
+                header: false,
+                footer: false,
+                toolbar: false,
+                toolbarSearch: false,
+                toolbarReload: false,
+                lineNumber: true,
+                selectColumn: false,
+              },
+              reorderColumns: true,
+              multiSelect: false,
+              columns: [
+                { field: 'newYubin', sortable: true, resizable: true, size: '80px', caption: '郵便番号' },
+                { field: 'kenNm', sortable: true, resizable: true, size: '100px', caption: '都道府県' },
+                { field: 'cityNm', sortable: true, resizable: true, size: '170px', caption: '市区町村' },
+                { field: 'ooazaNm', sortable: true, resizable: true, size: '170px', caption: '住所' },
+                { field: 'chomeNm', sortable: true, resizable: true, size: '170px', caption: '丁目・字名' }
+              ],
+              onSelect: function (event) {
+                var selectData = w2ui['todofukenDialog_grid'].get(event['recid']);
+                $("#todofukenDialog_retPostCode").val(selectData['newYubin']);
+                $("#todofukenDialog_retAreaCd").val(selectData['kenCd'] + selectData['cityCd']);
+                var kenNm = selectData['kenNm'];
+                kenNm += selectData['cityNm'] + ((selectData['ooazaNm'] != null && selectData['ooazaNm'] != "") ? selectData['ooazaNm'] : "");
+                if (selectData['chomeNm'] != null && selectData['chomeNm'] != "") {
+                  if (selectData['chomeNm'].endsWith("丁目")) {
+
+                    var chomeNm = selectData["chomeNm"].replace("丁目", "").replace(/[Ａ-Ｚａ-ｚ０-９]/g, function (s) {
+                      return String.fromCharCode(s.charCodeAt(0) - 65248);
+                    });
+
+                    var fistIndex = chomeNm.search(/[0-9]/g);
+                    if (fistIndex < 0) {
+
+                      $("#todofukenDialog_retAddress2").val(chomeNm);
+                    } else {
+
+                      kenNm += chomeNm.substring(0, fistIndex);
+                      $("#todofukenDialog_retAddress2").val(chomeNm.substring(fistIndex, chomeNm.length));
+                    }
+
+                  } else {
+                    kenNm += selectData['chomeNm'];
+                    $("#todofukenDialog_retAddress2").val("");
+                  }
+                } else {
+                  $("#todofukenDialog_retAddress2").val("");
+                }
+                $("#todofukenDialog_retAddress1").val(kenNm);
+                $("#todofukenDialog_retAddress3").val("");
+              },
+              onLoad: function (event) {
+                event.onComplete = function () {
+                  if (w2ui['todofukenDialog_grid'].records.length == 1) {
+                    w2ui['todofukenDialog_grid'].select(w2ui['todofukenDialog_grid'].records[0].recid);
+                  }
+                }
+              }
+            });
+            $(function () {
+              $(document).on("click", "#cityTable tbody tr", function () {
+                if ($(this).hasClass("selectItem")) {
+                  $(".cityRet").css("background-color", "#FFF").removeClass("selectItem");
+                } else {
+                  $(".cityRet").css("background-color", "#FFF").removeClass("selectItem");
+                  $(this).css("background-color", "rgb(182, 213, 255)").addClass("selectItem");
+                }
+              });
+              var todofukenTr = '<tbody><tr class="cityRet" cityCd="" style="height:20px;"><td style="border:1px solid #000;border-top:0px;" class="td1"></td><td style="border:1px solid #000;border-top:0px;" class="td2"></td></tr></tbody>';
+              $("#todofukenDialog_prefSelect").change(function () {
+                $("#cityTable tbody tr").remove();
+                if ($(this).val() != '') {
+                  var kenCd = $(this).val();
+                  $.ajax({
+                    type: 'POST',
+                    url: "/ans/ajax/todofuken/changeKenSelect",
+                    cache: false,
+                    async: false,
+                    data: {
+                      "jimushoFlg": jimushoFlg,
+                      "kenCd": kenCd,
+                    },
+                    success: function (ret, dataType) {
+                      if (ret && ret["retPref"] == "success") {
+                        var trTxt = "";
+                        $.each(ret["cityList"], function (key, val) {
+                          var appendTr = $(todofukenTr);
+                          appendTr.find("tr").attr("cityCd", val["cityCd"]);
+                          appendTr.find(".td1").html($("#todofukenDialog_prefSelect").children(':selected').text());
+                          appendTr.find(".td2").html(val["cityNm"]);
+                          trTxt += appendTr.html();
+                        });
+                        $("#cityTable tbody").append(trTxt);
+                      }
+                    },
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                      this;
+                    }
+                  });
+                }
+              });
+              $("#todofukenDialog_searchBtn").click(function () {
+                $(".todofukenDialog_result").val('');
+                w2ui['todofukenDialog_grid'].selectNone();
+                var searchDo = ($("#todofukenDialog_prefSelect").val() != "" || $("#cityTable").find(".selectItem").length == 1 || $("#todofukenDialog_postCode").val() != "" || $("#todofukenDialog_jimushoKna").val() != "");
+                if (searchDo) {
+                  refreshGrid({
+                    url: "/ans/ajax/todofuken/search",
+                    data: {
+                      "jimushoFlg": jimushoFlg,
+                      "kenCd": $("#todofukenDialog_prefSelect").val(),
+                      "cityCd": ($("#cityTable").find(".selectItem").length == 1) ? $("#cityTable").find(".selectItem").attr("cityCd") : "",
+                      "postCd": $("#todofukenDialog_postCode").val(),
+                      "jimushoKna": $("#todofukenDialog_jimushoKna").val()
+                    },
+                    gridNm: "todofukenDialog_grid"
+                  });
+                } else {
+                  alert("検索条件を選択してください。");
+                }
+              });
+
+              $("#todofukenDialog_closeBtn").click(todofukenDialogClose);
+              $("#todofukenDialog_torikeshihBtn").click(function () {
+                $(".todofukenDialog_result").val('');
+                w2ui['todofukenDialog_grid'].selectNone();
+              });
+              $("#todofukenDialog_selectBtn").click(function () {
+                if (w2ui['todofukenDialog_grid'].getSelection() == "") {
+                  alert("住所を選択してください。");
+                  return;
+                }
+                var selectData = w2ui['todofukenDialog_grid'].get(w2ui['todofukenDialog_grid'].getSelection());
+                if (selectData['chomeNm'] != null && selectData['chomeNm'] != "") {
+                  if (selectData['chomeNm'].endsWith("丁目")) {
+                    selectData["chomeNm"] = selectData["chomeNm"].replace("丁目", "").replace(/[Ａ-Ｚａ-ｚ０-９]/g, function (s) {
+                      return String.fromCharCode(s.charCodeAt(0) - 65248);
+                    });
+                    selectData['chomeFlg'] = true;
+                  } else {
+                    selectData['chomeFlg'] = false;
+                  }
+                }
+                selectData["banchiNm"] = (($("#todofukenDialog_retAddress3").val() != "") ? $("#todofukenDialog_retAddress3").val() : "");
+                selectData["jusho1"] = $("#todofukenDialog_retAddress1").val();
+                selectData["jusho2"] = $("#todofukenDialog_retAddress2").val();
+                for (key in selectData) {
+                  if (!selectData[key] || selectData[key] == null) {
+                    selectData[key] = "";
+                  }
+                }
+                callbackFunction(selectData);
+                isChanged = true;
+                todofukenDialogClose();
+              });
+            });
+            var todofukenDialog;
+            var jimushoFlg;
+            var callbackFunction;
+            function todofukenDialogClose() {
+              $("#menuArea, #footerBtnArea").css("z-index", "999");
+              todofukenDialog.dialog("close");
+            }
+            function todofukenDialogOpen(postCd, jimusho, callbackFunc) {
+              $("#todofukenDialog_prefSelect").html('').append($('<option>').text('選択してください').attr('value', ''));
+              todofukenDialogClear();
+              $(".todofukenDialog_condition").val('');
+              $(".todofukenDialog_result").val('');
+              jimushoFlg = "";
+              w2ui['todofukenDialog_grid'].removeColumn("jigyoNm");
+              $("#jimushoCnd").hide();
+              if (jimusho) {
+                jimushoFlg = "1";
+                w2ui['todofukenDialog_grid'].addColumn("kenNm", {
+                  field: 'jigyoNm',
+                  sortable: true,
+                  resizable: true,
+                  size: '150px',
+                  caption: '事務所名'
+                });
+                $("#jimushoCnd").show();
+              }
+              postCd = (postCd) ? postCd : "";
+              callbackFunction = callbackFunc;
+              $.ajax({
+                type: 'POST',
+                url: "/ans/ajax/todofuken/",
+                cache: false,
+                async: false,
+                data: {
+                  "jimushoFlg": jimushoFlg
+                },
+                success: function (ret, dataType) {
+                  if (ret && ret["retPref"] == "success") {
+                    $.each(ret["kenList"], function (key, val) {
+                      $("#todofukenDialog_prefSelect").append($('<option>').text(val["kenNm"]).attr('value', val["kenCd"]));
+                    });
+                  }
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                  this;
+                }
+              });
+              w2ui['todofukenDialog_grid'].clear();
+              w2ui['todofukenDialog_grid'].reset();
+              if (postCd && postCd != "") {
+                w2ui["todofukenDialog_grid"].load("/ans/ajax/todofuken/search?postCd=" + postCd + "&jimushoFlg=" + jimushoFlg);
+                $("#todofukenDialog_postCode").val(postCd);
+              }
+              $("#menuArea, #footerBtnArea").css("z-index", "100");
+              todofukenDialog.dialog("open");
+            }
+            function todofukenDialogClear() {
+              $("#todofukenDialog_prefSelect").val('');
+              $("#cityTable .cityRet").remove();
+              $("#todofukenDialog_postCode").val('');
+              $("#todofukenDialog_jimushoKna").val('');
+            }
+            todofukenDialog = $("#todofukenDialog").dialog({
+              autoOpen: false,
+              height: 600,
+              width: 950,
+              modal: true,
+              appendTo: "#header",
+            });
+          </script>
+          <script>
+            $("#ensenDialog_grid").w2grid({
+              name: 'ensenDialog_grid',
+              header: '沿線一覧',
+              show: {
+                header: true,
+                footer: true,
+                toolbar: true,
+                toolbarSearch: false,
+                toolbarReload: false,
+                lineNumber: true,
+                selectColumn: true,
+              },
+              reorderColumns: true,
+              multiSelect: false,
+              columns: [
+                { field: 'ensenCd', sortable: true, resizable: true, size: '70px', caption: 'コード' },
+                {
+                  field: 'ensenNm', sortable: true, resizable: true, size: '400px', caption: '沿線(路線)名',
+                  render: function (rec) {
+                    return escapeHtml(rec.ensenNm);
+                  }
+                }
+              ],
+              onLoad: function (event) {
+                event.onComplete = function () {
+                  if (w2ui["ensenDialog_grid"].records.length > 0) {
+                    if ($("#ensenDialog_ensenCd").val() != "") {
+                      w2ui["ensenDialog_grid"].select($("#ensenDialog_ensenCd").val());
+                    }
+                    if (w2ui["ensenDialog_grid"].getSelection().length == 0) {
+                      w2ui["ensenDialog_grid"].select(w2ui["ensenDialog_grid"].records[0].recid);
+                    }
+                  }
+                }
+              }
+            });
+            $(function () {
+              $("#ensenDialog_searchBtn").click(function () {
+                var cd = $("#ensenDialog_ensenCd").val();
+                var nm = $("#ensenDialog_ensenNm").val();
+                refreshGrid({
+                  url: "/ans/ajax/ensen/",
+                  data: {
+                    "ensenCd": $("#ensenDialog_ensenCd").val(),
+                    "ensenNm": $("#ensenDialog_ensenNm").val(),
+                    "tenpoId": ensenTenpoId,
+                  },
+                  gridNm: "ensenDialog_grid"
+                });
+              });
+
+              $("#ensenDialog_closeBtn").click(ensenDialogClose);
+              $("#ensenDialog_selectBtn").click(function () {
+                if (w2ui['ensenDialog_grid'].getSelection() == "") {
+                  alert("沿線を選択してください。");
+                  return;
+                }
+                callbackFunction(w2ui['ensenDialog_grid'].get(w2ui['ensenDialog_grid'].getSelection()));
+                isChanged = true;
+                ensenDialogClose();
+              });
+            });
+            var ensenDialog;
+            var ensenTenpoId;
+            var callbackFunction;
+            function ensenDialogClose() {
+              $("#menuArea, #footerBtnArea").css("z-index", "999");
+              ensenDialog.dialog("close");
+            }
+            function ensenDialogOpen(tenpoId, ensenCd, callbackFunc) {
+              callbackFunction = callbackFunc;
+              ensenTenpoId = tenpoId;
+              $("#ensenDialog_ensenCd").val("");
+              w2ui['ensenDialog_grid'].clear();
+              w2ui['ensenDialog_grid'].reset();
+              w2ui["ensenDialog_grid"].load("/ans/ajax/ensen/index?tenpoId=" + ensenTenpoId + "&ensenCd=" + ensenCd);
+              $("#ensenDialog_ensenCd").val(ensenCd);
+              w2ui["ensenDialog_grid"].refresh();
+              $("#menuArea, #footerBtnArea").css("z-index", "100");
+              ensenDialog.dialog("open");
+            }
+            ensenDialog = $("#ensenDialog").dialog({
+              autoOpen: false,
+              height: 580,
+              width: 560,
+              modal: true,
+              appendTo: "#header",
+            });
+          </script>
+          <script>
+            $("#ekiDialog_grid").w2grid({
+              name: 'ekiDialog_grid',
+              header: '駅一覧',
+              show: {
+                header: true,
+                footer: true,
+                toolbar: true,
+                toolbarSearch: false,
+                toolbarReload: false,
+                lineNumber: true,
+                selectColumn: true,
+              },
+              reorderColumns: true,
+              multiSelect: false,
+              columns: [
+                { field: 'ekiCd', sortable: true, resizable: true, size: '70px', caption: 'コード' },
+                {
+                  field: 'ekiNm', sortable: true, resizable: true, size: '400px', caption: '駅(停留所)名',
+                  render: function (rec) {
+                    return escapeHtml(rec.ekiNm);
+                  }
+                },
+              ],
+              onLoad: function (event) {
+                event.onComplete = function () {
+                  if (w2ui["ekiDialog_grid"].records.length > 0) {
+                    if ($("#ekiDialog_ekiCd").val() != "") {
+                      w2ui["ekiDialog_grid"].select($("#ekiDialog_ekiCd").val());
+                    }
+                    if (w2ui["ekiDialog_grid"].getSelection().length == 0) {
+                      w2ui["ekiDialog_grid"].select(w2ui["ekiDialog_grid"].records[0].recid);
+                    }
+                  }
+                }
+              }
+            });
+            $(function () {
+              $("#ekiDialog_searchBtn").click(function () {
+                refreshGrid({
+                  url: "/ans/ajax/eki/",
+                  data: {
+                    "ensenCd": ekiDialog_ensenCd,
+                    "ekiCd": $("#ekiDialog_ekiCd").val(),
+                    "ekiNm": $("#ekiDialog_ekiNm").val(),
+                  },
+                  gridNm: "ekiDialog_grid"
+                });
+              });
+
+              $("#ekiDialog_closeBtn").click(ekiDialogClose);
+              $("#ekiDialog_selectBtn").click(function () {
+                if (w2ui['ekiDialog_grid'].getSelection() == "") {
+                  alert("駅を選択してください。");
+                  return;
+                }
+                callbackFunction(w2ui['ekiDialog_grid'].get(w2ui['ekiDialog_grid'].getSelection()));
+                isChanged = true;
+                ekiDialogClose();
+              });
+            });
+            var ekiDialog;
+            var ekiDialog_ensenCd;
+            var callbackFunction;
+            function ekiDialogClose() {
+              $("#menuArea, #footerBtnArea").css("z-index", "999");
+              ekiDialog.dialog("close");
+            }
+            function ekiDialogOpen(ensenCd, ekiCd, callbackFunc) {
+              if (!ensenCd || ensenCd == "") {
+                alert("沿線を選択してください。");
+                return;
+              }
+              ekiDialog_ensenCd = ensenCd;
+              $("#ekiDialog_ekiCd").val("");
+              callbackFunction = callbackFunc;
+              w2ui['ekiDialog_grid'].clear();
+              w2ui['ekiDialog_grid'].reset();
+              if (ekiCd && ekiCd != "") {
+                w2ui["ekiDialog_grid"].load("/ans/ajax/eki/index?ensenCd=" + ensenCd + "&ekiCd=" + ekiCd);
+                $("#ekiDialog_ekiCd").val(ekiCd);
+              } else {
+                w2ui["ekiDialog_grid"].load("/ans/ajax/eki/index?ensenCd=" + ensenCd);
+              }
+              w2ui["ekiDialog_grid"].refresh();
+              $("#menuArea, #footerBtnArea").css("z-index", "100");
+              ekiDialog.dialog("open");
+            }
+            ekiDialog = $("#ekiDialog").dialog({
+              autoOpen: false,
+              height: 580,
+              width: 600,
+              modal: true,
+              appendTo: "#header"
+            });
+          </script>
+        </form>
+        <script>
+          $(function () {
+            $("#copyConfirmDialogCopy").click(function () {
+              $("#copyBukkenShashinFlg").val("true");
+              submit("copy");
+            });
+            $("#copyConfirmDialogNotCopy").click(function () {
+              $("#copyBukkenShashinFlg").val("false");
+              submit("copy");
+            });
+            $("#copyConfirmDialogCancel").click(function () {
+              $("#bukkenKihonId").val("");
+              copyConfirmDialogClose();
+            });
+          });
+          function copyConfirmDialogClose() {
+            $("#menuArea, #footerBtnArea").css("z-index", "999");
+            copyConfirmDialog.dialog("close");
+          }
+          function copyConfirmDialogOpen() {
+            $("#menuArea, #footerBtnArea").css("z-index", "100");
+            copyConfirmDialog.dialog("open");
+          }
+          copyConfirmDialog = $("#copyConfirmDialog").dialog({
+            autoOpen: false,
+            height: 180,
+            width: 500,
+            modal: true,
+            appendTo: "#header",
+            close: function () {
+              $("#menuArea, #footerBtnArea").css("z-index", "100");
+            }
+          });
+        </script>
+      </div>
+      <div id="footerBtnArea">
+        <form name="bukken_indexActionForm" id="form" method="post" action="https://test-ans.able.co.jp/ans/bukken/">
+          <div id="fotterBtnLeft">
+            <button type="button" class="submit returnic wid100" value="backTop">
+              <p>戻る</p>
+            </button> &nbsp;&nbsp; <div
+              style="width:40px; height:20px;border:1px solid black;background-color:#ffdcff;display: inline-block;vertical-align:middle;">
+            </div> ‥‥‥中途保存された建物です &nbsp;&nbsp; <div
+              style="width:40px; height:20px;border:1px solid black;background-color:#ffffcc;;display: inline-block;vertical-align:middle;">
+            </div> ‥‥‥中途保存された部屋を含む建物です &nbsp;&nbsp; <div
+              style="width:40px; height:20px;border:1px solid black;background-color:#999999;display: inline-block;vertical-align:middle;">
+            </div> ‥‥‥終了された建物です
+          </div>
+          <div id="fotterBtnRight">
+            <button type="button" class="submit registic wid200" value="add">
+              <p>新しい物件を作成する</p>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(function () {
+
+      $(".seirekihayamihyo").click(function () {
+        hizukeHenkanDialogOpen($(this).attr("setYearTag"));
+      });
+    });
+    function refreshGrid(option) {
+      var options = $.extend({
+        url: "",
+        data: {},
+        gridNm: ""
+      }, option);
+      $.ajax(options.url, {
+        type: "POST",
+        data: options.data,
+        success: function (json) {
+          if (json.toString().indexOf("ANSLGN010-01") >= 0) {
+            moveToSysErr();
+          }
+          if (!json["records"] || json["records"].length == 0) {
+            alert("検索条件に該当する情報はありません。");
+          }
+          w2ui[options.gridNm].records = json["records"];
+          w2ui[options.gridNm].total = json["records"].length;
+          w2ui[options.gridNm].refresh();
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+          moveToSysErr();
+        }
+      });
+    }
+
+    var hizukeHenkanDialog;
+    var hizukeHenkanInitFlg = true;
+    var hizukeHenkanDialogSettingTagId = "";
+    function hizukeHenkanDialogClose() {
+      $("#menuArea, #footerBtnArea").css("z-index", "999");
+      hizukeHenkanDialog.dialog("close");
+    }
+    function hizukeHenkanDialogOpen(settingTagId) {
+      hizukeHenkanDialogSettingTagId = settingTagId;
+      if (hizukeHenkanInitFlg) {
+        $.ajax({
+          type: "POST",
+          cache: false,
+          async: false,
+          url: "/ans/ajax/hizukeHenkan/",
+          success: function (data) {
+            var trObj = ["", "", "", ""];
+            var row = "";
+            for (var i = 0; i < 25; i++) {
+              var allInput = [false, false, false, false];
+              var isColor1 = (i == 0 || i % 2 == 0)
+              $.each(data, function () {
+                if (!allInput[0] && this.key == i) {
+                  trObj[0] = hizukeHenkanDialogCreateTd(this, isColor1);
+                  allInput[0] = true;
+                }
+                if (!allInput[1] && this.key == (i + 25)) {
+                  trObj[1] = hizukeHenkanDialogCreateTd(this, !isColor1);
+                  allInput[1] = true;
+                }
+                if (!allInput[2] && this.key == (i + 50)) {
+                  trObj[2] = hizukeHenkanDialogCreateTd(this, isColor1);
+                  allInput[2] = true;
+                }
+                if (!allInput[3] && this.key == (i + 75)) {
+                  trObj[3] = hizukeHenkanDialogCreateTd(this, !isColor1);
+                  allInput[3] = true;
+                }
+                if (allInput[0] && allInput[1] && allInput[2] && allInput[3]) {
+                  row += "<tr>";
+                  row += trObj[0];
+                  row += trObj[1];
+                  row += trObj[2];
+                  row += trObj[3];
+                  row += "</tr>";
+                  return false;
+                }
+              });
+            }
+            $("#hizukeHenkanDialog_table").append(row);
+          }
+        });
+      }
+      hizukeHenkanInitFlg = false;
+      $("#menuArea, #footerBtnArea").css("z-index", "100");
+      hizukeHenkanDialog.dialog("open");
+    }
+    function hizukeHenkanDialogCreateTd(json, isColor1) {
+      var td = "<td class='hizukeHenkanDialog_td1 ";
+      td += (isColor1) ? "hizukeHenkanDialog_tdColor1" : "hizukeHenkanDialog_tdColor2";
+      td += "'>";
+      td += json.wareki;
+      td += "</td>";
+      td += "<td class='hizukeHenkanDialog_td2 ";
+      td += (isColor1) ? "hizukeHenkanDialog_tdColor1" : "hizukeHenkanDialog_tdColor2";
+      td += "'><a href='#' class='hizukeHenkanDialog_seireki'>";
+      td += json.seireki;
+      td += "</a></td><td style='width:20px;min-width:20px;max-width:20px;'></td>";
+      return td;
+    }
+    hizukeHenkanDialog = $("#hizukeHenkanDialog").dialog({
+      autoOpen: false,
+      height: 520,
+      width: 670,
+      modal: true,
+      appendTo: "#header",
+    });
+    $(function () {
+      $(document).on("click", ".hizukeHenkanDialog_seireki", function () {
+        if (hizukeHenkanDialogSettingTagId && hizukeHenkanDialogSettingTagId.length > 0) {
+          var setTag = $("#" + hizukeHenkanDialogSettingTagId);
+          if (setTag.length > 0) {
+            setTag.val($(this).html());
+          }
+        }
+        hizukeHenkanDialogClose();
+        return false;
+      });
+    });
+
+    contextPath = "/ans/";
+
+    var isIe9Browser = (window.navigator.userAgent.toLowerCase().indexOf("msie") != -1
+      && window.navigator.appVersion.toLowerCase().indexOf("msie 9.") != -1);
+    var isIe10Browser = (window.navigator.userAgent.toLowerCase().indexOf("msie") != -1
+      && window.navigator.appVersion.toLowerCase().indexOf("msie 10.") != -1);
+
+    function moveToSysErr() {
+      isChanged = false;
+      location.href = "/ans/index/errorPage";
+    }
+    $(window).load(function () {
+      if (!location.href.match(/\/ans\/menu\//) && $('#mainContents:focus').length == 0) {
+        var sel = $("#mainContents").find("input[type=text], input[type=checkbox], input[type=file], input[type=radio], select, textarea");
+        sel.each(function () {
+          if (!$(this).prop("disabled") && !$(this).prop("readonly")) {
+            $(this).focus();
+            return false;
+          }
+        });
+      }
+      isChanged = false;
+    });
+    $(function () {
+      $(document).keydown(function (event) {
+
+        var keyCode = event.keyCode;
+
+        var ctrlClick = event.ctrlKey;
+
+        var altClick = event.altKey;
+
+        var obj = event.target;
+
+        switch (keyCode) {
+          case 8:
+            if ((obj.tagName.toUpperCase() == "INPUT" && obj.type.toUpperCase() == "TEXT")
+              || (obj.tagName.toUpperCase() == "INPUT" && obj.type.toUpperCase() == "SEARCH")
+              || (obj.tagName.toUpperCase() == "INPUT" && obj.type.toUpperCase() == "PASSWORD")
+              || obj.tagName.toUpperCase() == "TEXTAREA") {
+              return (!obj.readOnly && !obj.disabled);
+            }
+            return false;
+          case 13:
+            if (obj.tagName.toUpperCase() == "TEXTAREA") {
+              return (!obj.readOnly && !obj.disabled);
+            }
+            return false;
+          case 37:
+          case 39:
+            return !altClick;
+          case 116:
+            return false;
+        }
+        return true;
+      });
+
+      $("#haguruma").click(function () {
+        $("#setMenuWrap").toggle('blind');
+      });
+
+    });
+
+    function dispMessages(json) {
+      if (json.toString().indexOf("ANSLGN010-01") >= 0) {
+        moveToSysErr();
+      }
+      $("#messageArea").show();
+      $("#messageAreaContents").html("");
+      if (json) {
+        switch (json["result"]) {
+          case "WARN":
+            $("#messageAreaBtn").css("background", "linear-gradient(to bottom, yellow, yellow)");
+            $("#messageAreaBtn").css("filter", "progid:DXImageTransform.Microsoft.gradient(startColorstr='yellow', endColorstr='yellow', GradientType=0)");
+            $("#messageAreaBtn p").html("警&emsp;告");
+            break;
+          case "ERROR":
+            $("#messageAreaBtn").css("background", "linear-gradient(to bottom, red, red)");
+            $("#messageAreaBtn").css("filter", "progid:DXImageTransform.Microsoft.gradient(startColorstr='red', endColorstr='red', GradientType=0)");
+            $("#messageAreaBtn p").html("エラー");
+            break;
+        }
+        if (json["messages"] && json["messages"].length > 0) {
+          var tags = "";
+          $.each(json["messages"], function () {
+            tags += "<div>"
+            if (this.id && this.id != "") {
+              var msgId = (this.buttonId && this.buttonId.length > 0) ? "id = '" + this.buttonId + "_" + this.id + "'" : "";
+              tags += '・<a href="#" msgId="#' + this.id + '" class="messageItem" ' + msgId + '>' + this.msg + '</a>';
+            } else {
+              tags += "・" + this.msg;
+            }
+            tags += "</div>"
+          });
+          $("#messageAreaContents").append(tags);
+          $("#messageAreaContents").show();
+        }
+      }
+    }
+
+    regMsgList = { "0": '登録処理を行いますか？', "1": '修正します。よろしいですか？', "2": '登録内容を削除します。よろしいですか？' };
+    (function ($) {
+      $.fn.registAction = function (option) {
+        if ($(this).length < 1) {
+          return this;
+        }
+        $(this).on("click", function () {
+          $("#messageArea").hide();
+          var options = $.extend({
+            initAction: function (param) { return true; },
+            termAction: function (param) { return true; },
+            messageDisp: true,
+            messageKbn: "0",
+            confMessage: "",
+          }, option);
+          if (!options.initAction($(this))) {
+            return this;
+          }
+          if (options.messageDisp) {
+            var msgKey = (!options.messageKbn || options.messageKbn == "0") ? "0" : options.messageKbn;
+            if (msgKey == "9" && options.confMessage && options.confMessage.length > 0) {
+              if (!confirm(options.confMessage)) {
+                return this;
+              }
+            } else if (!confirm(regMsgList[msgKey])) {
+              return this;
+            }
+          }
+          $(this).prop("disabled", true);
+          showLoading();
+          var form = ($('#form').length != 0) ? $('#form') : $("form");
+          var baseAction = form.attr('action');
+          baseAction = (baseAction.endsWith("/") ? baseAction : baseAction + "/");
+          var url = baseAction + $(this).val();
+          var encFlg = (form.attr("enctype") && form.attr("enctype").length > 0);
+          var data = (encFlg) ? new FormData(form.get()[0]) : form.serialize();
+          var contentType = (encFlg) ? "multipart/form-data" : "application/x-www-form-urlencoded; charset=UTF-8";
+          var thisBtn = $(this);
+          var hideCoverDivFlg = true;
+          $.ajax(url, {
+            type: 'POST',
+            data: data,
+            processData: !encFlg,
+            contentType: contentType,
+          }).done(function (ret, dataType) {
+            if (!ret || ret["result"] == "FAIL") {
+              moveToSysErr();
+            }
+            if (ret.toString().indexOf("ANSLGN010-01") >= 0) {
+              moveToSysErr();
+            }
+            switch (ret["result"]) {
+              case "SUCCESS":
+                showLoading();
+                thisBtn.prop("disabled", false);
+                if (ret["messages"] && ret["messages"].length > 0) {
+                  alert(ret["messages"][0].msg);
+                }
+                if (ret["successUrl"] && ret["successUrl"].length > 0) {
+                  hideCoverDivFlg = false;
+                  thisBtn.prop("disabled", true);
+                  isChanged = false;
+                  location.href = contextPath + ret["successUrl"];
+                }
+                if (!options.termAction(ret["list"])) {
+                  return this;
+                }
+                break;
+              case "WARN":
+                dispMessages(ret);
+                if (!confirm('警告メッセージが発生しましたが、登録処理を続行しますか。')) {
+                  thisBtn.prop("disabled", false);
+                  return this;
+                }
+                if (encFlg) {
+                  data.append("warnCheckFlg", "false");
+                } else {
+                  data += "&warnCheckFlg=false"
+                }
+                hideCoverDivFlg = false;
+                $.ajax(url, {
+                  type: 'POST',
+                  data: data,
+                  processData: !encFlg,
+                  contentType: contentType,
+                }).done(function (ret, dataType) {
+                  if (!ret || ret["result"] == "FAIL") {
+                    moveToSysErr();
+                  }
+                  if (ret.toString().indexOf("ANSLGN010-01") >= 0) {
+                    moveToSysErr();
+                  }
+                  switch (ret["result"]) {
+                    case "SUCCESS":
+                      thisBtn.prop("disabled", false);
+                      if (ret["messages"] && ret["messages"].length > 0) {
+                        alert(ret["messages"][0].msg);
+                      }
+                      if (ret["successUrl"] && ret["successUrl"].length > 0) {
+                        hideCoverDivFlg = false;
+                        thisBtn.prop("disabled", true);
+                        isChanged = false;
+                        location.href = contextPath + ret["successUrl"];
+                      }
+                      if (!options.termAction(ret["list"])) {
+                        return this;
+                      }
+                      break;
+
+                    case "ERROR":
+                      hideLoading();
+                      dispMessages(ret);
+                      thisBtn.prop("disabled", false);
+                      break;
+                  }
+                }).fail(function () {
+                  moveToSysErr();
+                }).always(function () {
+                });
+                break;
+              case "ERROR":
+                dispMessages(ret);
+                thisBtn.prop("disabled", false);
+                break;
+            }
+          }).fail(function () {
+            moveToSysErr();
+          }).always(function () {
+            if (hideCoverDivFlg) {
+              hideLoading();
+            }
+          });
+        });
+      }
+      $.fn.searchAction = function (option) {
+        if ($(this).length < 1) {
+          return this;
+        }
+        $(this).on("click", function () {
+          showLoading();
+          $("#messageArea").hide();
+          var options = $.extend({
+            initAction: function () {
+              return true;
+            },
+            termAction: function (param) {
+              return true;
+            },
+          }, option);
+          if (!options.initAction()) {
+            $("#coverDiv").hide();
+            return this;
+          }
+
+          var form = ($('#form').length != 0) ? $('#form') : $("form");
+          var baseAction = form.attr('action');
+          baseAction = (baseAction.endsWith("/") ? baseAction : baseAction + "/");
+          var url = baseAction + $(this).val();
+          var data = form.serialize();
+          $.ajax(url, {
+            type: 'POST',
+            data: data,
+          }).done(function (ret, dataType) {
+            if (ret && ret.toString().indexOf("ANSLGN010-01") >= 0) {
+              moveToSysErr();
+            }
+            if (ret["result"] == "SUCCESS") {
+              if (!options.termAction(ret["listJson"])) {
+                return this;
+              }
+              $("#coverDiv").hide();
+            } else if (ret["result"] == "WARN") {
+              dispMessages(ret);
+              if (confirm("警告が有ります。\n検索を進めますか？")) {
+                $.ajax(url, {
+                  type: 'POST',
+                  data: data + "&warnCheckFlg=false"
+                }).done(function (ret, dataType) {
+                  if (ret && ret.toString().indexOf("ANSLGN010-01") >= 0) {
+                    moveToSysErr();
+                  }
+                  if (ret["result"] == "SUCCESS") {
+                    if (!options.termAction(ret["listJson"])) {
+                      return this;
+                    }
+                  } else {
+                    dispMessages(ret);
+                  }
+                }).fail(function (ret, dataType) {
+                  moveToSysErr();
+                }).always(function (ret, dataType) {
+                  hideLoading();
+                });
+              }
+            } else if (ret["result"] == "ERROR") {
+              dispMessages(ret);
+              hideLoading();
+
+            } else if (ret["result"] == "FAIL") {
+              moveToSysErr();
+            }
+          }).fail(function () {
+            moveToSysErr();
+          }).always(function () {
+            hideLoading();
+          });
+        });
+      }
+
+      $.fn.beforeOutputAction = function (option) {
+        if ($(this).length < 1) {
+          return this;
+        }
+        $(this).on("click", function () {
+          $("#messageArea").hide();
+          var options = $.extend({
+            initAction: function (param) {
+              return true;
+            },
+            termAction: function (param) {
+              return true;
+            }
+          }, option);
+          options.initAction($(this))
+
+          if (!confirm('登録処理を行いますか？')) {
+            return false;
+          }
+
+          var form = $('#form');
+          if (!form) {
+            form = $("form");
+          }
+          showLoading();
+          var baseAction = form.attr('action');
+          baseAction = (baseAction.endsWith("/") ? baseAction : baseAction + "/");
+          var url = baseAction + $(this).val();
+          var encFlg = (form.attr("enctype") && form.attr("enctype").length > 0);
+          var contentType = (encFlg) ? "multipart/form-data" : "application/x-www-form-urlencoded; charset=UTF-8";
+          var data = (encFlg) ? new FormData(form.get()[0]) : form.serialize();
+          var dataNext = (encFlg) ? new FormData(form.get()[0]) : form.serialize();
+          if (encFlg) {
+            data.append("warnCheckFlg", "true");
+            data.append("outputReportFlg", "true");
+          } else {
+            data += "&warnCheckFlg=true&outputReportFlg=true"
+          }
+          var thisBtn = $(this);
+          var hideCoverDivFlg = true;
+          $.ajax(url, {
+            type: 'POST',
+            data: data,
+            processData: !encFlg,
+            contentType: contentType,
+          }).done(function (ret, dataType) {
+            if (!ret || ret["result"] == "FAIL") {
+              moveToSysErr();
+            }
+            if (ret.toString().indexOf("ANSLGN010-01") >= 0) {
+              moveToSysErr();
+            }
+            switch (ret["result"]) {
+              case "SUCCESS":
+                thisBtn.prop("disabled", false);
+                isChanged = false;
+                options.termAction(ret);
+                break;
+              case "WARN":
+                dispMessages(ret);
+                if (!confirm('警告メッセージが発生しましたが、登録処理を続行しますか。')) {
+                  thisBtn.prop("disabled", false);
+                  return this;
+                }
+                if (encFlg) {
+                  dataNext.append("warnCheckFlg", "false");
+                  dataNext.append("outputReportFlg", "true");
+                } else {
+                  dataNext += "&warnCheckFlg=false&outputReportFlg=true"
+                }
+                $("#messageArea").hide();
+                hideCoverDivFlg = false;
+                $.ajax(url, {
+                  type: 'POST',
+                  data: dataNext,
+                  processData: !encFlg,
+                  contentType: contentType,
+                }).done(function (ret, dataType) {
+                  if (!ret || ret["result"] == "FAIL") {
+                    moveToSysErr();
+                  }
+                  if (ret.toString().indexOf("ANSLGN010-01") >= 0) {
+                    moveToSysErr();
+                  }
+                  hideCoverDivFlg = true;
+                  switch (ret["result"]) {
+                    case "SUCCESS":
+                      thisBtn.prop("disabled", false);
+                      isChanged = false;
+                      options.termAction(ret);
+                      break;
+                    case "ERROR":
+                      hideLoading();
+                      dispMessages(ret);
+                      thisBtn.prop("disabled", false);
+                      break;
+                  }
+                }).fail(function () {
+                  moveToSysErr();
+                }).always(function () {
+                  if (hideCoverDivFlg) {
+                    hideLoading();
+                  }
+                });
+                break;
+              case "ERROR":
+                dispMessages(ret);
+                thisBtn.prop("disabled", false);
+                break;
+            }
+          }).fail(function () {
+            moveToSysErr();
+          }).always(function () {
+            if (hideCoverDivFlg) {
+              hideLoading();
+            }
+          });
+        });
+      };
+
+      $.fn.checkDisabled = function (options) {
+        if ($(this).length < 1)
+          return this;
+        var options = $.extend({
+          target: "",
+          checkDisabled: true
+        }, options);
+        if ((typeof options.target == 'string' && options.target.length > 0 && $(options.target).length > 0)
+          && (typeof options.checkDisabled == 'boolean'))
+          this.change(function () {
+            $(options.target).prop("disabled", ($(this).prop("checked")) ? options.checkDisabled : !options.checkDisabled);
+          });
+        return this;
+      };
+
+      $.fn.checkHide = function (options) {
+        if ($(this).length < 1)
+          return this;
+        var options = $.extend({
+          target: "",
+          checkHide: true
+        }, options);
+        if ((typeof options.target == 'string' && options.target.length > 0 && $(options.target).length > 0) && (typeof options.checkHide == 'boolean'))
+          this.change(function () {
+            $(this).prop("checked") ? (options.checkHide ? $(options.target).hide() : $(options.target).show())
+              : (options.checkHide ? $(options.target).show() : $(options.target).hide());
+          });
+        return this;
+      };
+
+
+      $.fn.setShowImg = function (options) {
+        var baseoptions = { 'selector': '', 'slide': false, 'top': true, 'left': false };
+        $.extend(baseoptions, options);
+        options = baseoptions;
+        var notTargetId = 'img' + Date.now();
+        var glass = $('<img src="/ans/img/icon_glass.png?5FAB7799B21F2CED679C537886F908CF" id="' + notTargetId + '" width="45px" height="45px" style="position:absolute; cursor:pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;" />');
+
+        var mouseenterFunc = function () {
+          var img = $(this);
+          var imgs = [];
+          var parentObj = false;
+          var findStr = false;
+          if (arguments.length > 2) {
+            parentObj = arguments[1];
+            findStr = arguments[2];
+          }
+          setTimeout(function () {
+            glass.remove();
+            $('body').append(glass);
+            glass.show();
+            glass.offset({ 'top': (options.top ? img.offset().top : img.offset().top + img.height() - glass.height()), 'left': (options.left ? img.offset().left : img.offset().left + img.width() - glass.width()) });
+
+            glass.click(function () {
+              var coverDiv = $('<div style="position:fixed; top:0; left:0; background-color:rgba(0,0,0,0.3); width:100%; height:100%; padding:10px; z-index:9999; box-sizing: border-box; display:none;"></div>');
+              var coverDiv2 = $('<div class="coverDiv2" style="position:relative; width:100%; height:100%; background-size: contain; background-position: center; background-repeat: no-repeat;"></div>');
+              var nextDiv = $('<div style="position:absolute; height:100%; width:25%; top:0; right:0; cursor:pointer;"><img src="/ans/img/icon_next.png?5FAB7799B21F2CED679C537886F908CF" id="' + notTargetId + '" style="position:absolute; height:auto; width:auto; top:0; left:0; bottom:0; right:0; margin:auto; max-height:100%; max-width:100%; display:none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;" /></div>');
+              var prevDiv = $('<div style="position:absolute; height:100%; width:25%; top:0; left:0; cursor:pointer;"><img src="/ans/img/icon_prev.png?5FAB7799B21F2CED679C537886F908CF" id="' + notTargetId + '" style="position:absolute; height:auto; width:auto; top:0; left:0; bottom:0; right:0; margin:auto; max-height:100%; max-width:100%;display:none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none;" /></div>')
+              if (parentObj) {
+                var findImgs = $(parentObj).find(findStr);
+                if (findImgs.length > 1) {
+                  imgs = findImgs.get();
+                }
+              }
+              if (imgs.length > 0) {
+                for (var idx in imgs) {
+                  if (!img.is($(imgs[idx]))) {
+                    coverDiv2.clone(false).appendTo(coverDiv).css('background-image', 'url(' + $(imgs[idx]).attr('src') + ')').hide();
+                  } else {
+                    coverDiv2.clone(false).appendTo(coverDiv).css('background-image', 'url(' + $(imgs[idx]).attr('src') + ')');
+                  }
+                }
+
+                var nextPrevMouseenter = function () {
+                  $(this).css('background-color', 'rgba(0,0,0,0.5)');
+                  $(this).find('img').show();
+                  return false;
+                };
+                var nextPrevMouseleave = function () {
+                  $(this).css('background-color', 'rgba(0,0,0,0)');
+                  $(this).find('img').hide();
+                  return false;
+                };
+                nextDiv.click(function () {
+                  var findFlg = false;
+                  coverDiv.find('.coverDiv2').each(function () {
+                    if (findFlg) {
+                      $(this).fadeIn(300);
+                      findFlg = false;
+                      return false;
+                    } else if ($(this).is(':visible')) {
+                      findFlg = true;
+                      $(this).hide();
+                    }
+                  });
+                  if (findFlg) {
+                    coverDiv.find('.coverDiv2').eq(0).fadeIn(300);
+                  }
+                  return false;
+                }).mouseenter(nextPrevMouseenter).mouseleave(nextPrevMouseleave);
+
+                prevDiv.click(function () {
+                  var findFlg = false;
+                  $(coverDiv.find('.coverDiv2').get().reverse()).each(function () {
+                    if (findFlg) {
+                      $(this).fadeIn(300);
+                      findFlg = false;
+                      return false;
+                    } else if ($(this).is(':visible')) {
+                      findFlg = true;
+                      $(this).hide();
+                    }
+                  });
+                  if (findFlg) {
+                    $(coverDiv.find('.coverDiv2').get().reverse()).eq(0).fadeIn(300);
+                  }
+                  return false;
+                }).mouseenter(nextPrevMouseenter).mouseleave(nextPrevMouseleave);
+
+                coverDiv.append(nextDiv);
+                coverDiv.append(prevDiv);
+              } else {
+                coverDiv2.clone(false).appendTo(coverDiv).css('background-image', 'url(' + img.attr('src') + ')');
+              }
+              $('body').append(coverDiv);
+              coverDiv.fadeIn(300);
+
+
+              var keydownEventName = 'keydown.' + Date.now();
+              $('body').on(keydownEventName, function (e) {
+                if (e.keyCode == '27') {
+                  $('body').off(keydownEventName);
+                  coverDiv.remove();
+                  return false;
+                } else if (e.keyCode == '39') {
+                  nextDiv.trigger('click');
+                  return false;
+                } else if (e.keyCode == '37') {
+                  prevDiv.trigger('click');
+                  return false;
+                }
+              });
+
+              coverDiv.click(function () {
+                $('body').off(keydownEventName);
+                coverDiv.remove();
+                return false;
+              });
+
+              return false;
+            });
+
+            glass.mouseleave(function () {
+              setTimeout(function () {
+                var findFlg = false;
+                jQuery(":hover").each(function () {
+                  if (img.is($(this))) {
+                    findFlg = true;
+                    return false;
+                  }
+                });
+                if (!findFlg) {
+                  glass.remove();
+                }
+              }, 0);
+            });
+          }, 10);
+        };
+
+        var mouseleaveFunc = function () {
+          setTimeout(function () {
+            var findFlg = false;
+            jQuery(":hover").each(function () {
+              if (glass.is($(this))) {
+                findFlg = true;
+                return false;
+              }
+            });
+            if (!findFlg) {
+              glass.remove();
+            }
+          }, 0);
+        };
+
+        var dragstartFunc = function () {
+          glass.hide();
+        };
+
+        var dragendFunc = function () {
+          glass.show();
+        };
+
+        var timeoutId = false;
+        var mousedownFunc = function () {
+          timeoutId = setTimeout(function () {
+            glass.hide();
+            timeoutId = false;
+          }, 300);
+        }
+
+        var mouseupFunc = function () {
+          if (timeoutId) {
+            clearTimeout(timeoutId);
+            timeoutId = false;
+          } else {
+            glass.show();
+            var img = $(this);
+            setTimeout(function () {
+              glass.offset({ 'top': (options.top ? img.offset().top : img.offset().top + img.height() - glass.height()), 'left': (options.left ? img.offset().left : img.offset().left + img.width() - glass.width()) });
+            }, 0);
+          }
+        }
+
+        this.each(function () {
+          if ($(this).prop('tagName') == 'IMG') {
+            $(this).on({ 'showImgMouseenter': mouseenterFunc, 'showImgMouseleave': mouseleaveFunc, 'dragstart': dragstartFunc, 'dragend': dragendFunc, 'mousedown': mousedownFunc, 'mouseup': mouseupFunc });
+            $(this).on({
+              'mouseenter': function () {
+                $(this).trigger('showImgMouseenter');
+              },
+              'mouseleave': function () {
+                $(this).trigger('showImgMouseleave');
+              }
+            });
+          } else {
+            var parentObj = this;
+            if (options.selector) {
+              if (typeof options.selector !== 'string') {
+                console.log('this argument not string');
+                return true;
+              } else if (options.selector.match(/\s|,/)) {
+                console.log('this selector can not be specified');
+                return true;
+              }
+              $(this).on({ 'showImgMouseenter': mouseenterFunc, 'showImgMouseleave': mouseleaveFunc, 'dragstart': dragstartFunc, 'dragend': dragendFunc, 'mousedown': mousedownFunc, 'mouseup': mouseupFunc }, 'img:not(#' + notTargetId + ')' + options.selector + ',' + options.selector + ' img:not(#' + notTargetId + ')');
+              $(this).on({
+                'mouseenter': function () {
+                  if (options.slide) {
+                    $(this).trigger('showImgMouseenter', [parentObj, 'img:visible:not(#' + notTargetId + ')' + options.selector + ',' + options.selector + ' img:visible:not(#' + notTargetId + ')']);
+                  } else {
+                    $(this).trigger('showImgMouseenter');
+                  }
+                },
+                'mouseleave': function () {
+                  $(this).trigger('showImgMouseleave');
+                }
+              }, 'img:not(#' + notTargetId + ')' + options.selector + ',' + options.selector + ' img:not(#' + notTargetId + ')');
+            } else {
+              $(this).on({ 'showImgMouseenter': mouseenterFunc, 'showImgMouseleave': mouseleaveFunc, 'dragstart': dragstartFunc, 'dragend': dragendFunc, 'mousedown': mousedownFunc, 'mouseup': mouseupFunc }, 'img:not(#' + notTargetId + ')');
+              $(this).on({
+                'mouseenter': function () {
+                  if (options.slide) {
+                    $(this).trigger('showImgMouseenter', [parentObj, 'img:visible:not(#' + notTargetId + ')']);
+                  } else {
+                    $(this).trigger('showImgMouseenter');
+                  }
+                },
+                'mouseleave': function () {
+                  $(this).trigger('showImgMouseleave');
+                }
+              }, 'img:not(#' + notTargetId + ')');
+            }
+          }
+        });
+
+        return this;
+      };
+    }(jQuery));
+
+    $(function () {
+      $(document).on("click", "#messageAreaContents a.messageItem", function () {
+        var btnId = $(this).attr("id");
+        if (btnId && btnId.length > 0) {
+          var errorInfo = btnId.split("_");
+          var sideBtn = $("#" + errorInfo[0]);
+          if (sideBtn.prop("disabled")) {
+            var clickObj = $($(this).attr("msgId"));
+            var isFixed = clickObj.parents().filter(function () {
+              var position = $(this).css("position");
+              return position == "absolute" || position == "fixed";
+            }).length > 0;
+            if (isFixed) {
+              clickObj.focus().select();
+            } else if (clickObj.length > 0) {
+              $('html, body').animate({
+                scrollTop: clickObj.offset().top - 75 - $(this).closest("#messageAreaContents").height()
+              }, {
+                duration: "slow",
+                complete: function () {
+                  clickObj.focus().select();
+                }
+              });
+            }
+          } else {
+            sideBtn.attr("hontoroku", errorInfo[1]);
+            sideBtn.trigger("click");
+          }
+        } else {
+          var clickObj = $($(this).attr("msgId"));
+          var isFixed = clickObj.parents().filter(function () {
+            var position = $(this).css("position");
+            return position == "absolute" || position == "fixed";
+          }).length > 0;
+          if (isFixed) {
+            clickObj.focus().select();
+          } else if (clickObj.length > 0) {
+            $('html,body').animate({
+              scrollTop: clickObj.offset().top - 75 - $(this).closest("#messageAreaContents").height()
+            }, {
+              duration: "slow",
+              complete: function () {
+                clickObj.focus().select();
+              }
+            });
+          }
+        }
+        return false;
+      });
+
+      setInterval(function () {
+        $.ajax({
+          type: "POST",
+          url: contextPath + "keep.action",
+          success: function (msg) {
+          },
+          error: function (msg) {
+          },
+        });
+      }, 300000);
+
+
+      $(".backConfBtn").click(function () {
+        if (confirm('編集した内容を適用せずに画面遷移します。よろしいですか？')) {
+          var form = $('#form');
+          if (!form) {
+            form = $("form");
+          }
+          var action = $(this).val();
+          var baseAction = form.attr('action');
+          if (action && action != "") {
+            form.attr('action', (baseAction.endsWith("/") ? baseAction : baseAction + "/") + action);
+            form.submit();
+          }
+          form.attr('action', baseAction);
+          return false;
+        }
+      });
+
+      $("#logout").click(function () {
+        if (confirm("ログアウトを行います。\nよろしいでしょうか？")) {
+          isChanged = false;
+          location.href = contextPath + "index/logout";
+        }
+        return false;
+      });
+    });
+    var timer = false;
+    $(window).resize(function () {
+      if (timer !== false) {
+        clearTimeout(timer);
+      }
+      timer = setTimeout(function () {
+        if ($("#coverDiv").length != 0) {
+          $("#coverDiv").css("width", $(window).width()).css("height", $(window).height());
+        }
+      }, 200);
+    });
+
+    function outputCheck(cnt, maxCheckList) {
+      var reportInfo = {
+
+        "002": { maxCheck: 100, label: "貸主宛名タックシール" },
+        "001": { maxCheck: 100, label: "貸主宛名はがき" },
+        "003": { maxCheck: 100, label: "貸主一覧（管理会社詳細一覧）" },
+        "004": { maxCheck: 100, label: "貸主一覧（管理会社連絡先一覧）" },
+
+        "008": { maxCheck: 100, label: "部屋カード(PDF)" },
+        "008_E": { maxCheck: 1, label: "部屋カード(Excel)" },
+        "075_1": { maxCheck: 100, label: "物件カード(PDF)" },
+        "075_1_E": { maxCheck: 1, label: "物件カード(Excel)" },
+        "006": { maxCheck: 100, label: "物件管理カード" },
+        "007": { maxCheck: 100, label: "外観・周辺写真" },
+        "010": { maxCheck: 100, label: "室内写真" },
+        "019": { maxCheck: 100, label: "間取図一覧" },
+
+        "012": { maxCheck: 100, label: "入居者宛名タック" },
+        "011": { maxCheck: 100, label: "入居者宛名ハガキ" },
+
+        "024": { maxCheck: 30, label: "入居申込書" },
+        "025": { maxCheck: 30, label: "領収書１（借受申込金/預り金）" },
+        "026": { maxCheck: 30, label: "領収書２（決済金）" },
+        "035": { maxCheck: 30, label: "請求書" },
+        "027": { maxCheck: 30, label: "お届け金明細書" },
+        "028": { maxCheck: 30, label: "お届金受領書" },
+        "029": { maxCheck: 30, label: "出金伝票" },
+        "030": { maxCheck: 30, label: "お届け金管理票" },
+        "031": { maxCheck: 30, label: "広告料領収証" },
+        "032": { maxCheck: 30, label: "広告申込書" },
+        "033": { maxCheck: 30, label: "賃貸借物件媒介申込書" },
+        "034": { maxCheck: 30, label: "重要事項説明書" },
+        "036": { maxCheck: 30, label: "建物賃貸借契約書" },
+        "037": { maxCheck: 30, label: "駐車場賃貸借契約書" },
+        "036_2": { maxCheck: 30, label: "テナント賃貸借契約書" },
+        "040": { maxCheck: 30, label: "取引台帳" },
+        "038": { maxCheck: 30, label: "連帯保証人承諾書" },
+        "043": { maxCheck: 30, label: "解約通知書" },
+        "042": { maxCheck: 30, label: "契約手続きのご案内" },
+        "036_1": { maxCheck: 30, label: "建物賃貸借契約書表紙" },
+        "037_1": { maxCheck: 30, label: "駐車場賃貸借契約書表紙" },
+        "036_3": { maxCheck: 30, label: "テナント賃貸借契約書表紙" },
+        "039": { maxCheck: 30, label: "法定代理人同意書" },
+        "041": { maxCheck: 30, label: "鍵受領証" },
+
+        "021": {
+          maxCheck: 500, label:
+
+            "検索結果"
+
+        },
+
+        "023": { maxCheck: 500, label: "検索結果一覧（登録物件一覧）" },
+
+        "059": { maxCheck: 30, label: "更新のお知らせ" },
+        "060": { maxCheck: 30, label: "お届け金明細書 " },
+        "061": { maxCheck: 30, label: "お届け金受領書" },
+        "062": { maxCheck: 30, label: "出金伝票" },
+        "063": { maxCheck: 30, label: "お届け金管理票" },
+
+        "057": { maxCheck: 100, label: "タックシール印刷" },
+        "064": { maxCheck: 30, label: "更新のご案内" },
+        "066": { maxCheck: 30, label: "解約通知書" },
+        "065": { maxCheck: 30, label: "更新契約書" },
+        "065_1": { maxCheck: 30, label: "更新契約書表紙" },
+        "067": { maxCheck: 30, label: "領収書" },
+        "071": { maxCheck: 30, label: "請求書" },
+
+        "058": { maxCheck: 100, label: "タックシール印刷" },
+        "056": { maxCheck: 500, label: "更新進捗管理表" },
+
+        "054": { maxCheck: 500, label: "退去進捗管理一覧" },
+        "050": { maxCheck: 30, label: "解約退去のご案内" },
+        "051": { maxCheck: 30, label: "リフォーム代金ご請求" },
+
+        "084": { maxCheck: 100, label: "タックシール" },
+        "052": { maxCheck: 30, label: "解約退去のご確認" },
+        "053": { maxCheck: 30, label: "解約精算のご案内" },
+
+        "086": { maxCheck: 100, label: "タックシール" }
+      };
+
+      var isError = false;
+      var max = 0;
+      var maxCheck = 0;
+      var label = "";
+      for (rNo in maxCheckList) {
+        var json = reportInfo[maxCheckList[rNo]];
+        if (json && json) {
+          if (cnt > json.maxCheck) {
+            alert('選択件数が' + json.maxCheck + '件を超えているため、' + json.label + 'は出力できません。');
+            return false;
+          }
+        }
+      }
+      return true;
+    }
+    function searchMaxCheck(maxLength, jsonLength) {
+      if (jsonLength >= maxLength) {
+        alert("検索結果が" + String(maxLength).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1,') + "件を超えているので、全件表示できません。\n対象の件数を調べたい場合は「件数確認」を行ってください。");
+      }
+    }
+
+    function w2gridStateSave(gridId, grid, confMessage) {
+      if (confirm(confMessage ? confMessage : '一覧の設定を保存します。')) {
+        var gridState = [];
+        for (var idx in grid.columns) {
+          var col = grid.columns[idx];
+          var columnData = {
+            field: col.field,
+            fieldSize: col.size,
+            hidden: (col.hidden ? '1' : '0'),
+            hyojijun: Number(idx) + 1
+          };
+          for (var idx2 in grid.sortData) {
+            if (grid.sortData[idx2].field == columnData.field) {
+              columnData.sortjun = Number(idx2) + 1,
+                columnData.direction = (grid.sortData[idx2].direction == "asc" ? "0" : "1")
+            }
+          }
+          gridState.push(columnData);
+        }
+
+        showLoading();
+        $.ajax("/ans/ajax/w2grid/stateSave", {
+          type: 'POST',
+          contentType: 'application/json',
+          data: JSON.stringify({
+            gridId: gridId,
+            gridState: gridState
+          }),
+        }).done(function (ret, dataType) {
+          if (ret["result"] == "SUCCESS") {
+            alert("一覧の設定を保存しました。");
+            hideLoading();
+          } else if (ret["result"] == "ERROR") {
+            dispMessages(ret);
+            hideLoading();
+          } else if (ret["result"] == "FAIL") {
+            moveToSysErr();
+          }
+        }).fail(function () {
+          moveToSysErr();
+        });
+      }
+    }
+
+    function w2gridStateReset(gridId, callbackFunc, confMessage) {
+      if (confirm(confMessage ? confMessage : '一覧の設定を初期化します。')) {
+        showLoading();
+        $.ajax("/ans/ajax/w2grid/stateReset", {
+          type: 'POST',
+          contentType: 'application/json',
+          data: JSON.stringify({
+            gridId: gridId
+          }),
+        }).done(function (ret, dataType) {
+          if (typeof callbackFunc === "function") {
+            callbackFunc(ret);
+          }
+          alert("一覧の設定を初期化しました。");
+          hideLoading();
+        }).fail(function () {
+          moveToSysErr();
+        });
+      }
+    }
+
+    function w2gridColumnsSetting(settingList, baseList) {
+      var columns = [];
+      for (var idx1 in settingList) {
+        for (var idx2 in baseList) {
+          if (settingList[idx1].field == baseList[idx2].field) {
+            var col = Object.create(baseList[idx2]);
+            col.size = settingList[idx1].fieldSize;
+            col.hidden = (settingList[idx1].hidden == '1');
+            columns.push(col);
+          }
+        }
+      }
+      return columns;
+    }
+
+    function w2gridSort(grid, sortData) {
+      var sortDataCopy = Object.create(sortData);
+      grid.sort();
+      for (var idx in sortDataCopy) {
+        grid.sort(sortDataCopy[idx].field, sortDataCopy[idx].direction, true);
+      }
+    }
+    function getStringFromDate(date, format) {
+      var year_str = date.getFullYear();
+      //月だけ+1すること
+      var month_str = 1 + date.getMonth();
+      var day_str = date.getDate();
+      var hour_str = date.getHours();
+      var minute_str = date.getMinutes();
+      var second_str = date.getSeconds();
+
+      month_str = ('0' + month_str).slice(-2);
+      day_str = ('0' + day_str).slice(-2);
+      hour_str = ('0' + hour_str).slice(-2);
+      minute_str = ('0' + minute_str).slice(-2);
+      second_str = ('0' + second_str).slice(-2);
+
+      format_str = format || 'YYYY/MM/DD(DY) hh:mm:ss';
+      format_str = format_str.replace(/YYYY/g, year_str);
+      format_str = format_str.replace(/MM/g, month_str);
+      format_str = format_str.replace(/DD/g, day_str);
+      format_str = format_str.replace(/hh/g, hour_str);
+      format_str = format_str.replace(/mm/g, minute_str);
+      format_str = format_str.replace(/ss/g, second_str);
+      format_str = format_str.replace(/DY/g, ["日", "月", "火", "水", "木", "金", "土"][date.getDay()]);
+
+      return format_str;
+    }
+    
+    $(document).ready(function () {
+      ctlRegDateRadio();
+
+
+
+    });
+    $(function () {
+      $(".condBukkenNoFromToValid").show();
+      $(".condBukkenNoFromToInvalid").hide();
+
+      $('#tatemonoGrid').w2grid({
+        name: 'tatemonoGrid',
+        header: '物件一覧',
+        show: {
+          header: true,
+          footer: true,
+          toolbar: true,
+          toolbarSearch: false,
+          lineNumbers: true,
+          selectColumn: false,
+          toolbarReload: false,
+        },
+        reorderColumns: true,
+        records: [],
+        columns: [
+          { field: 'buttons', sortable: true, caption: '編集', size: '248px' },
+          { field: 'bukkenNo', sortable: true, caption: '物件No', size: '100px' },
+          {
+            field: 'regUpdDt', sortable: true, caption: '登録または修正された日', size: '190px',
+            render: function (rec) {
+              if (rec.regUpdDt) {
+                var dt = new Date(rec.regUpdDt);
+                return dt.getFullYear() + "/" + (dt.getMonth() + 1) + "/" + dt.getDate() + " " + dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+              } else {
+                return "";
+              }
+            }
+          },
+          {
+            field: 'tatemonoNm', sortable: true, caption: '物件名', size: '240px',
+            render: function (rec) {
+              return escapeHtml(rec.tatemonoNm);
+            }
+          },
+          {
+            field: 'tatemonoKna', sortable: true, caption: '物件ｶﾅ', size: '240px',
+            render: function (rec) {
+              return escapeHtml(rec.tatemonoKna);
+            }
+          },
+          { field: 'torokuZumiSu', sortable: true, caption: '登録部屋数', size: '100px', },
+          { field: 'gaikanShashinSu', sortable: true, caption: '外観写真枚数', size: '110px', },
+          { field: 'shuhenShashinSu', sortable: true, caption: '周辺写真枚数', size: '110px', },
+          { field: 'shuhenShashinMstSu', sortable: true, caption: '周辺写真マスタ<br />選択枚数', size: '120px', },
+          {
+            field: 'companyNm', sortable: true, caption: '会社', size: '150px',
+            render: function (rec) {
+              return escapeHtml(rec.companyNm);
+            }
+          },
+          {
+            field: 'tenpoNm', sortable: true, caption: '店舗', size: '150px',
+            render: function (rec) {
+              return escapeHtml(rec.tenpoNm);
+            }
+          }
+        ]
+      });
+
+
+      $("#search").searchAction({
+        initAction: function () {
+          var tenpoNasiUser;
+
+          w2ui["tatemonoGrid"].clear();
+          return true;
+        },
+        termAction: function (listJson) {
+          searchMaxCheck(10000, listJson.records.length);
+          w2ui["tatemonoGrid"].total = listJson.records.length;
+          w2ui["tatemonoGrid"].records = listJson.records;
+          if (listJson.dispKaisha) {
+            w2ui["tatemonoGrid"].showColumn('companyNm');
+          } else {
+            w2ui["tatemonoGrid"].hideColumn('companyNm');
+          }
+          if (listJson.dispTenpo) {
+            w2ui["tatemonoGrid"].showColumn('tenpoNm');
+          } else {
+            w2ui["tatemonoGrid"].hideColumn('tenpoNm');
+          }
+          w2ui["tatemonoGrid"].refresh();
+          return true;
+        }
+      });
+
+
+      $("#searchJusho").click(function () {
+        todofukenDialogOpen($("#condYubin").val(), false, function (json) {
+          $("#condYubin").val(json["newYubin"]);
+          $("#condJusho1").val(json["jusho1"]);
+          $("#condJusho2").val(json["jusho2"]);
+          $("#condJusho3").val(json["banchiNm"]);
+        });
+      });
+
+      $("#searchCount").click(function () {
+        showLoading();
+        $("#messageArea").hide();
+        w2ui["tatemonoGrid"].clear();
+        $("#bukkenCount").val("1");
+        var form = $('#form');
+        var baseAction = form.attr('action');
+        baseAction = (baseAction.endsWith("/") ? baseAction : baseAction + "/");
+        var url = baseAction + $(this).val();
+        var data = form.serialize();
+        $.ajax(url, {
+          type: 'POST', data: data,
+        }).done(function (ret, dataType) {
+          if (ret["result"] == "SUCCESS") {
+            hideLoading();
+            alert("検索結果：" + ret.messages[0].msg);
+          } else if (ret["result"] == "ERROR") {
+            dispMessages(ret);
+            hideLoading();
+          } else if (ret["result"] == "FAIL") {
+            moveToSysErr();
+          }
+          $("#bukkenCount").val("");
+        }).fail(function () {
+          moveToSysErr();
+        });
+      });
+
+
+      $("#searchEnsen").click(function () {
+        ensenDialogOpen("C01907781", $("#condEnsen").val(), function (json) {
+          $("#condEnsen").val(json["ensenCd"]);
+          $("#condEnsenNm").val(json["ensenNm"]);
+          clearEki();
+        });
+      });
+
+
+      $("#searchEkiFrom").click(function () {
+        ekiDialogOpen($("#condEnsen").val(), $("#condEkiFrom").val(), function (json) {
+          $("#condEkiFrom").val(json["ekiCd"]);
+          $("#condEkiNmFrom").val(json["ekiNm"]);
+        });
+      });
+
+
+      $("#searchEkiTo").click(function () {
+        ekiDialogOpen($("#condEnsen").val(), $("#condEkiTo").val(), function (json) {
+          $("#condEkiTo").val(json["ekiCd"]);
+          $("#condEkiNmTo").val(json["ekiNm"]);
+        });
+      });
+
+
+      $("#condEnsen").change(function () {
+        clearEnsen();
+      });
+
+
+      $("#condEkiFrom").change(function () {
+        $("#condEkiNmFrom").val("");
+      });
+
+
+      $("#condEkiTo").change(function () {
+        $("#condEkiNmTo").val("");
+      });
+
+
+      $("[name='listDto.condRegUpdKb']").change(function () {
+        ctlRegDateRadio();
+      });
+    });
+
+
+    function edit(bukkenKihonId) {
+      $("#bukkenKihonId").val(bukkenKihonId);
+      submit("edit");
+    };
+
+
+    function copy(bukkenKihonId) {
+      $("#bukkenKihonId").val(bukkenKihonId);
+      var json = w2ui["tatemonoGrid"].get(bukkenKihonId);
+      if (json.gaikanShashinSu > 0) {
+        copyConfirmDialogOpen();
+      } else {
+        submit("copy");
+      }
+    };
+
+
+    function heya(bukkenKihonId) {
+      $("#bukkenKihonId").val(bukkenKihonId);
+      submit("heya");
+    };
+
+
+    function conditionClear() {
+      clearCommonCond();
+      $("input[type='text']").val("");
+      $(":radio").prop("checked", false);
+      $("input:checkbox").prop("checked", false);
+      $("select option").attr("selected", false);
+      $("#jitenOnly").prop("checked", true);
+      $("#bukkenEndFlg").prop("checked", true);
+      disableRegDate(true);
+      $("#condKanri").val("");
+      $("#radioRegDt_1").prop("checked", true);
+      $("#heyaRadioRyoho").prop("checked", true);
+    };
+
+
+    function clearEnsen() {
+      $("#condEnsenNm").val("");
+      clearEki();
+    }
+
+
+    function clearEki() {
+      $("#condEkiFrom,#condEkiNmFrom,#condEkiTo,#condEkiNmTo").val("");
+    }
+
+
+    function disableRegDate(disable) {
+      $("#condRegUpdDtYear,#condRegUpdDtMonth,#condRegUpdDtDay,#condRegUpdDtTani").prop("disabled", disable);
+      if (disable) {
+        $("#condRegUpdDtYear,#condRegUpdDtMonth,#condRegUpdDtDay,#condRegUpdDtTani").val("");
+      }
+
+    }
+
+
+    function ctlRegDateRadio() {
+      if ($("#radioRegDt_5").prop("checked")) {
+
+        disableRegDate(false);
+      } else {
+
+        disableRegDate(true);
+      }
+    }
+  </script>
+  <script type="text/javascript">
+    hideLoading();
+    $("#headerTitle").css("width", "980px");
+
+    $("#___backBtn___").click(function () {
+      submit('backTop');
+    });
+  </script>
+</body>
+
+</html>
